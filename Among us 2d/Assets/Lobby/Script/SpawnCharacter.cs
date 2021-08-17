@@ -9,6 +9,9 @@ using Photon.Realtime;
 public class SpawnCharacter : MonoBehaviourPunCallbacks
 {
     public GameObject PlayerPrefab;
+    public GameObject[] spawnpoz;
+
+    private int index = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,6 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks
 
     public void Spawn()
     {
-        PhotonNetwork.Instantiate(this.PlayerPrefab.name, new Vector3(Random.Range(-1.5f,1.5f),0,0), Quaternion.identity);
+        PhotonNetwork.Instantiate(this.PlayerPrefab.name, spawnpoz[index++].transform.position, Quaternion.identity);
     }
 }
