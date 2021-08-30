@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1369696390372278261}
   - component: {fileID: 1369696390372278262}
   - component: {fileID: 5904107305540392948}
-  - component: {fileID: 315775665958826004}
   - component: {fileID: 6115465603422710164}
+  - component: {fileID: 315775665958826004}
   - component: {fileID: 8973511448665594050}
   - component: {fileID: 2970583891894979924}
   - component: {fileID: 3424752016253945782}
@@ -128,20 +128,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
   m_UseLocal: 1
---- !u!114 &315775665958826004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369696390372278257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 496ed9d5d2907a24a9974bc424f0458f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMoveable: 1
-  speed: 2
 --- !u!114 &6115465603422710164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +149,19 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
+--- !u!114 &315775665958826004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369696390372278257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496ed9d5d2907a24a9974bc424f0458f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!95 &8973511448665594050
 Animator:
   serializedVersion: 3

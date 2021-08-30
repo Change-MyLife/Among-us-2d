@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Photon.Pun;
 using Photon.Realtime;
 
@@ -8,11 +9,12 @@ public class CharacterMove : MonoBehaviourPunCallbacks
 {
     private Animator animator;
 
-    public bool isMoveable;
+    static public bool isMoveable;
     public float speed = 2f;
 
     void Start()
     {
+        isMoveable = true;
         animator = GetComponent<Animator>();
 
         if (photonView.IsMine)
@@ -26,10 +28,16 @@ public class CharacterMove : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        if (photonView.IsMine) 
+        // UI 버튼을 클릭시 캐릭터 움직임 x
+        if((Input.GetMouseButtonDown(0) && EventSystem.current.IsPointerOverGameObject()))
+        {
+            isMoveable = false;
+        }
+
+        if (photonView.IsMine && isMoveable)
         {
             bool isMove = false;
-            if(Setting.controlType == EcontrolType.KeyboardMouse)
+            if (Setting.controlType == EcontrolType.KeyboardMouse)
             {
                 Vector3 dir = Vector3.ClampMagnitude(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f), 1f);
                 if (dir.x < 0f) transform.localScale = new Vector3(-0.5f, 0.5f, 1f);
@@ -47,7 +55,10 @@ public class CharacterMove : MonoBehaviourPunCallbacks
                     transform.position += dir * speed * Time.deltaTime;
                     isMove = dir.magnitude != 0f;
                 }
+                
             }
+
+            // 애니메이터 파라미터
             animator.SetBool("IsMove", isMove);
         }
     }

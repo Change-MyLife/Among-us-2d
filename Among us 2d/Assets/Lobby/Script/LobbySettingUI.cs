@@ -21,6 +21,9 @@ public class LobbySettingUI : MonoBehaviour
 
     private void OnEnable()
     {
+        // 캐릭터 정지
+        CharacterMove.isMoveable = false;
+
         switch (Setting.controlType)
         {
             case EcontrolType.Mouse:
@@ -52,6 +55,9 @@ public class LobbySettingUI : MonoBehaviour
 
     public void Close()
     {
+        // 캐릭터 이동
+        CharacterMove.isMoveable = true;
+
         StartCoroutine(CloseAfterDelay());
     }
 
