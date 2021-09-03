@@ -13,13 +13,13 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks /*IPunObservable*/
 
     private int index;
 
-    // Start is called before the first frame update
+    static public GameObject myPlayer;
+
     void Awake()
     {
         Spawn();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -33,7 +33,7 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks /*IPunObservable*/
     public void Spawn()
     {
         index = Random.Range(0, 5);
-        PhotonNetwork.Instantiate(this.PlayerPrefab.name, spawnpoz[index].transform.position, Quaternion.identity);
+        myPlayer = PhotonNetwork.Instantiate(this.PlayerPrefab.name, spawnpoz[index].transform.position, Quaternion.identity);
     }
 
     /*public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

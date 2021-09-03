@@ -1,10 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CharacterColorUI
     - CharacterMove
     - CreateRoomUI
     - Crew
     - FloatingCrew
+    - LaptopTrigger
     - LobbySettingUI
     - MainMenuUI
     - OnlineUI
@@ -93,11 +95,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
@@ -138,6 +142,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 60
       Script: {instanceID: 0}
     - Class: 61
@@ -167,21 +173,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12162}
     - Class: 114
+      Script: {instanceID: 12190}
+    - Class: 114
       Script: {instanceID: 12514}
     - Class: 114
       Script: {instanceID: 12770}
     - Class: 114
       Script: {instanceID: 13110}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13208}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 16376}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 16568}
+      Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16380}
+    - Class: 114
+      Script: {instanceID: 16402}
+    - Class: 114
+      Script: {instanceID: 16572}
+    - Class: 114
+      Script: {instanceID: 16674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -290,89 +304,89 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13110}
     - Class: 114
-      Script: {instanceID: 13270}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 13278}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13568}
+      Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 13620}
+      Script: {instanceID: 13622}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13710}
     - Class: 114
-      Script: {instanceID: 13842}
+      Script: {instanceID: 13846}
     - Class: 114
-      Script: {instanceID: 13856}
+      Script: {instanceID: 13860}
     - Class: 114
-      Script: {instanceID: 13864}
+      Script: {instanceID: 13868}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 14312}
+      Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 14388}
+      Script: {instanceID: 14392}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14526}
     - Class: 114
-      Script: {instanceID: 14678}
+      Script: {instanceID: 14682}
     - Class: 114
-      Script: {instanceID: 14704}
+      Script: {instanceID: 14708}
     - Class: 114
-      Script: {instanceID: 14714}
+      Script: {instanceID: 14718}
     - Class: 114
-      Script: {instanceID: 14736}
+      Script: {instanceID: 14740}
     - Class: 114
-      Script: {instanceID: 14802}
+      Script: {instanceID: 14806}
     - Class: 114
-      Script: {instanceID: 14828}
+      Script: {instanceID: 14832}
     - Class: 114
-      Script: {instanceID: 14996}
+      Script: {instanceID: 15000}
     - Class: 114
-      Script: {instanceID: 15048}
+      Script: {instanceID: 15052}
     - Class: 114
-      Script: {instanceID: 15062}
+      Script: {instanceID: 15066}
     - Class: 114
-      Script: {instanceID: 15160}
+      Script: {instanceID: 15164}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15208}
     - Class: 114
-      Script: {instanceID: 15228}
+      Script: {instanceID: 15232}
     - Class: 114
-      Script: {instanceID: 15482}
+      Script: {instanceID: 15486}
     - Class: 114
-      Script: {instanceID: 15572}
+      Script: {instanceID: 15576}
     - Class: 114
-      Script: {instanceID: 15918}
+      Script: {instanceID: 15922}
     - Class: 114
-      Script: {instanceID: 16170}
+      Script: {instanceID: 16174}
     - Class: 114
-      Script: {instanceID: 16230}
+      Script: {instanceID: 16234}
     - Class: 114
-      Script: {instanceID: 16376}
+      Script: {instanceID: 16380}
     - Class: 114
-      Script: {instanceID: 16514}
+      Script: {instanceID: 16518}
     - Class: 114
-      Script: {instanceID: 16520}
+      Script: {instanceID: 16524}
     - Class: 114
-      Script: {instanceID: 16568}
+      Script: {instanceID: 16572}
     - Class: 114
-      Script: {instanceID: 16594}
+      Script: {instanceID: 16598}
     - Class: 114
-      Script: {instanceID: 16616}
+      Script: {instanceID: 16620}
     - Class: 114
-      Script: {instanceID: 16626}
+      Script: {instanceID: 16630}
     - Class: 114
-      Script: {instanceID: 16662}
+      Script: {instanceID: 16666}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16758}
+      Script: {instanceID: 16762}
     - Class: 114
-      Script: {instanceID: 16764}
+      Script: {instanceID: 16768}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1074,6 +1088,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: ab326cfa14f07bc29175fa889aeb9371
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterColorUI
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1122,7 +1142,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPlayerTtlProperty
   - hash:
       serializedVersion: 2
-      Hash: e530191f4c31d907767318d5f7770561
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterMove
@@ -1162,6 +1182,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerGroup
+  - hash:
+      serializedVersion: 2
+      Hash: b452946659814cf1479810627a835349
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LaptopTrigger
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
