@@ -1088,7 +1088,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: ab326cfa14f07bc29175fa889aeb9371
+      Hash: a8197a6f8352959ddc65d971de67fe07
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterColorUI
@@ -2244,6 +2244,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: cbe1ab6cca2674be7a070105b5e8f8eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NetworkRoomManger
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
