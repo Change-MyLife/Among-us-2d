@@ -10,8 +10,6 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
     [SerializeField]
     private Image CrewImage;
     [SerializeField]
-    private GameObject Crewimage;
-    [SerializeField]
     private Button[] ColorButtons;
 
     int PrevNumber = -1;
@@ -21,6 +19,12 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
         // 캐릭터 정지
         CharacterMove.isMoveable = false;
     }*/
+
+    void Start()
+    {
+        var inst = Instantiate(CrewImage.material);
+        CrewImage.material = inst;
+    }
 
     public void Close()
     {
@@ -36,7 +40,7 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
         if (!ColorButtons[Number].transform.GetChild(0).gameObject.activeSelf)
         {
             // 자신의 캐릭터 색깔 변경
-            //SpawnCharacter.myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Number));
+            SpawnCharacter.myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Number));
 
             // UI 캐릭터의 색상 변경
             CrewImage.GetComponent<Image>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Number));

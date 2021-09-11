@@ -189,13 +189,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 16380}
+      Script: {instanceID: 16382}
     - Class: 114
-      Script: {instanceID: 16402}
+      Script: {instanceID: 16404}
     - Class: 114
-      Script: {instanceID: 16572}
+      Script: {instanceID: 16574}
     - Class: 114
-      Script: {instanceID: 16674}
+      Script: {instanceID: 16676}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -362,31 +362,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15922}
     - Class: 114
-      Script: {instanceID: 16174}
+      Script: {instanceID: 16176}
     - Class: 114
-      Script: {instanceID: 16234}
+      Script: {instanceID: 16236}
     - Class: 114
-      Script: {instanceID: 16380}
+      Script: {instanceID: 16382}
     - Class: 114
-      Script: {instanceID: 16518}
+      Script: {instanceID: 16520}
     - Class: 114
-      Script: {instanceID: 16524}
+      Script: {instanceID: 16526}
     - Class: 114
-      Script: {instanceID: 16572}
+      Script: {instanceID: 16574}
     - Class: 114
-      Script: {instanceID: 16598}
+      Script: {instanceID: 16600}
     - Class: 114
-      Script: {instanceID: 16620}
+      Script: {instanceID: 16622}
     - Class: 114
-      Script: {instanceID: 16630}
+      Script: {instanceID: 16632}
     - Class: 114
-      Script: {instanceID: 16666}
+      Script: {instanceID: 16668}
     - Class: 114
-      Script: {instanceID: 16674}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 16762}
+      Script: {instanceID: 16764}
     - Class: 114
-      Script: {instanceID: 16768}
+      Script: {instanceID: 16770}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -878,7 +878,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: bfe2a7b038f34a4999acf847b6dde615
+      Hash: f2acf32ad78bb1e9f6ca97e0fdf8c6f0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnCharacter
@@ -1088,7 +1088,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: a8197a6f8352959ddc65d971de67fe07
+      Hash: ab326cfa14f07bc29175fa889aeb9371
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterColorUI
@@ -1898,6 +1898,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: cbe1ab6cca2674be7a070105b5e8f8eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NetworkRoomManger
+  - hash:
+      serializedVersion: 2
       Hash: 2b53d93770b9036b2fd1c7854560bc69
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -2244,12 +2250,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: cbe1ab6cca2674be7a070105b5e8f8eb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NetworkRoomManger
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity

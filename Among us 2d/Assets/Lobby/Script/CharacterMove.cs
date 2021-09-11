@@ -14,6 +14,7 @@ public class CharacterMove : MonoBehaviourPunCallbacks
 
     void Start()
     {
+
         isMoveable = true;
         animator = GetComponent<Animator>();
 

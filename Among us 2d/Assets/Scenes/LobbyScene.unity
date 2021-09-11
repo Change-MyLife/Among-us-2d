@@ -3867,7 +3867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 6e1bfd0584133c64e8dbb6796605c9d3, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
@@ -4681,7 +4681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrewImage: {fileID: 1652069655}
-  Crewimage: {fileID: 1652069653}
   ColorButtons:
   - {fileID: 1628231733}
   - {fileID: 1116804556}
@@ -6427,6 +6426,7 @@ MonoBehaviour:
   - {fileID: 238818976}
   - {fileID: 1634815470}
   - {fileID: 79836803}
+  playerColor: 0
 --- !u!114 &2039263730
 MonoBehaviour:
   m_ObjectHideFlags: 0
