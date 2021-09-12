@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class LaptopTrigger : MonoBehaviour
+public class LaptopTrigger : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private Button UseButton;
@@ -16,24 +18,30 @@ public class LaptopTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UseButton.image.overrideSprite = sprites[1];
-        // 커스텀 마이즈 버튼의 활성화
-        UseButton.interactable = true;
-        UseButton.GetComponent<Image>().raycastTarget = true;
+        if (collision.GetComponent<PhotonView>().IsMine)
+        {
+            UseButton.image.overrideSprite = sprites[1];
+            // 커스텀 마이즈 버튼의 활성화
+            UseButton.interactable = true;
+            UseButton.GetComponent<Image>().raycastTarget = true;
 
-        // 버튼에 이벤트 연결
-        UseButton.onClick.AddListener(CustomizeOnClick);
+            // 버튼에 이벤트 연결
+            UseButton.onClick.AddListener(CustomizeOnClick);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        UseButton.image.overrideSprite = sprites[0];
-        // 커스텀 마이즈 버튼의 비활성화
-        UseButton.interactable = false;
-        UseButton.GetComponent<Image>().raycastTarget = false;
+        if (collision.GetComponent<PhotonView>().IsMine)
+        {
+            UseButton.image.overrideSprite = sprites[0];
+            // 커스텀 마이즈 버튼의 비활성화
+            UseButton.interactable = false;
+            UseButton.GetComponent<Image>().raycastTarget = false;
 
-        // 연결된 이벤트 연결해제
-        UseButton.onClick.RemoveListener(CustomizeOnClick);
+            // 연결된 이벤트 연결해제
+            UseButton.onClick.RemoveListener(CustomizeOnClick);
+        }
     }
 
     public void CustomizeOnClick()

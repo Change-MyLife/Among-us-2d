@@ -4636,7 +4636,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1495725720}
   - component: {fileID: 1495725721}
-  - component: {fileID: 1495725722}
   m_Layer: 5
   m_Name: Character Color UI
   m_TagString: Untagged
@@ -4694,28 +4693,6 @@ MonoBehaviour:
   - {fileID: 1610278892}
   - {fileID: 697264458}
   - {fileID: 230433987}
---- !u!114 &1495725722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495725719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 1
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1580460988
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,7 +6356,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2039263728}
   - component: {fileID: 2039263729}
-  - component: {fileID: 2039263730}
   m_Layer: 0
   m_Name: SpawnCharacter
   m_TagString: Untagged
@@ -6427,28 +6403,6 @@ MonoBehaviour:
   - {fileID: 1634815470}
   - {fileID: 79836803}
   playerColor: 0
---- !u!114 &2039263730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039263727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 999
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &2051472385
 GameObject:
   m_ObjectHideFlags: 0
@@ -6710,6 +6664,7 @@ GameObject:
   - component: {fileID: 2071876427}
   - component: {fileID: 2071876429}
   - component: {fileID: 2071876430}
+  - component: {fileID: 2071876431}
   m_Layer: 0
   m_Name: sprite_laptop
   m_TagString: Untagged
@@ -6814,6 +6769,28 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1abf9d0ad96ed484ab3f289f79f9404d, type: 3}
   - {fileID: 21300000, guid: 1aa46c5fcf627ad409d7cd1e922dcc1c, type: 3}
   UI: {fileID: 1495725719}
+--- !u!114 &2071876431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071876426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2073595696
 GameObject:
   m_ObjectHideFlags: 0
