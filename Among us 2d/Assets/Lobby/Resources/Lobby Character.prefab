@@ -109,6 +109,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 5904107305540392948}
   - {fileID: 6115465603422710164}
+  - {fileID: 315775665958826004}
   sceneViewId: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -162,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  playerColor: 0
 --- !u!95 &8973511448665594050
 Animator:
   serializedVersion: 3

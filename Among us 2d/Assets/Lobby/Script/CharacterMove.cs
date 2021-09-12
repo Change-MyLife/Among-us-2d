@@ -5,15 +5,21 @@ using UnityEngine.EventSystems;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class CharacterMove : MonoBehaviourPunCallbacks
+public class CharacterMove : MonoBehaviourPunCallbacks , IPunObservable
 {
     private Animator animator;
 
     static public bool isMoveable;
     public float speed = 2f;
 
+    private SpriteRenderer spriteRender;
+
+    public EPlayerColor playerColor;
+
     void Start()
     {
+        spriteRender = GetComponent<SpriteRenderer>();
+        spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
 
         isMoveable = true;
         animator = GetComponent<Animator>();
@@ -61,6 +67,32 @@ public class CharacterMove : MonoBehaviourPunCallbacks
 
             // 애니메이터 파라미터
             animator.SetBool("IsMove", isMove);
+        }
+    }
+
+    public void setColor()
+    {
+        if(spriteRender == null)
+        {
+            spriteRender = GetComponent<SpriteRenderer>();
+        }
+        spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
+    }
+
+    public void change()
+    {
+        gameObject.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)0));
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(playerColor);
+        }
+        else
+        {
+            playerColor = (EPlayerColor)stream.ReceiveNext();
         }
     }
 }

@@ -1140,7 +1140,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPlayerTtlProperty
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+      Hash: 21570a2b041481e588608fd6d3c50df3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterMove

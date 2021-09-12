@@ -35,9 +35,11 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
 
     public void OnColorButton(int Number)
     {
-        //photonView.RPC("ChangeColor",RpcTarget.All,Number);
+        SpawnCharacter.myPlayer.GetComponent<CharacterMove>().change();
+
+        /*//photonView.RPC("ChangeColor",RpcTarget.All,Number);
         // 선택가능한 색상?
-        if (!ColorButtons[Number].transform.GetChild(0).gameObject.activeSelf)
+        if (!ColorButtons[Number].transform.GetChild(0).gameObject.activeSelf && SpawnCharacter.myPlayer.GetComponent<PhotonView>().IsMine)
         {
             // 자신의 캐릭터 색깔 변경
             SpawnCharacter.myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Number));
@@ -55,7 +57,7 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
             }
         }
 
-        PrevNumber = Number;
+        PrevNumber = Number;*/
     }
 
     /*public void OnPhotonInstantiate(PhotonMessageInfo info)

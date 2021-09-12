@@ -6664,7 +6664,6 @@ GameObject:
   - component: {fileID: 2071876427}
   - component: {fileID: 2071876429}
   - component: {fileID: 2071876430}
-  - component: {fileID: 2071876431}
   m_Layer: 0
   m_Name: sprite_laptop
   m_TagString: Untagged
@@ -6769,28 +6768,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1abf9d0ad96ed484ab3f289f79f9404d, type: 3}
   - {fileID: 21300000, guid: 1aa46c5fcf627ad409d7cd1e922dcc1c, type: 3}
   UI: {fileID: 1495725719}
---- !u!114 &2071876431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071876426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 1
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &2073595696
 GameObject:
   m_ObjectHideFlags: 0

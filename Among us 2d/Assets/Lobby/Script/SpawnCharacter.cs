@@ -12,8 +12,8 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks /*, IPunObservable*/
     public GameObject[] spawnpoz;
 
     public EPlayerColor playerColor;
-
-    //static public List<GameObject> myPlayer = new List<GameObject>();
+    
+    // 플레이어
     static public GameObject myPlayer;
 
     void Awake()
@@ -26,25 +26,24 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks /*, IPunObservable*/
         base.OnJoinedLobby();
     }
 
+    // 캐릭터 생성
     public void Spawn()
     {
         int index = Random.Range(0, 5);
-        //myPlayer.Add(PhotonNetwork.Instantiate(this.PlayerPrefab.name, spawnpoz[index].transform.position, Quaternion.identity));
         myPlayer = PhotonNetwork.Instantiate(this.PlayerPrefab.name, spawnpoz[index].transform.position, Quaternion.identity);
-        myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Random.Range(0,10)));
-
-        //myPlayer[0].GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)0));
+        //myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Random.Range(0,10)));
+        myPlayer.GetComponent<CharacterMove>().playerColor = 0;
     }
 
-    public void PlayerColorCheck()
+    /*public void PlayerColorCheck()
     {
         // 현재 방에 들어와있는 플레이어의 색상 체크
-        /*for(int i = 0; i < myPlayer.Count; i++)
+        for(int i = 0; i < myPlayer.Count; i++)
         {
             //Debug.Log(myPlayer[i].GetComponent<SpriteRenderer>().material.GetColor("_PlayerColor"));
             Debug.Log(i);
-        }*/
-    }
+        }
+    }*/
 
     [ContextMenu("정보")]
     void Info()
