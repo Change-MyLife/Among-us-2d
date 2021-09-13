@@ -6,24 +6,26 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class SpawnCharacter : MonoBehaviourPunCallbacks /*, IPunObservable*/
+public class SpawnCharacter : MonoBehaviourPunCallbacks/*, IPunObservable*/
 {
     public GameObject PlayerPrefab;
     public GameObject[] spawnpoz;
 
-    public EPlayerColor playerColor;
+    // 플레이어 색상
+    [SerializeField]
+    private EPlayerColor color;
     
     // 플레이어
     static public GameObject myPlayer;
 
-    void Awake()
+    static public GameObject[] m_player;
+
+    public bool[] checkColor;
+
+    void Start()
     {
         Spawn();
-    }
-
-    public override void OnJoinedLobby()
-    {
-        base.OnJoinedLobby();
+        GetPlayer();
     }
 
     // 캐릭터 생성
@@ -31,27 +33,25 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks /*, IPunObservable*/
     {
         int index = Random.Range(0, 5);
         myPlayer = PhotonNetwork.Instantiate(this.PlayerPrefab.name, spawnpoz[index].transform.position, Quaternion.identity);
-        //myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Random.Range(0,10)));
-        myPlayer.GetComponent<CharacterMove>().playerColor = 0;
+        myPlayer.GetComponent<PhotonView>().RPC("setColor", RpcTarget.AllBuffered, color);
     }
 
-    /*public void PlayerColorCheck()
+    // 방에 들어와 있는 플레이어들 가져오기
+    void GetPlayer()
     {
-        // 현재 방에 들어와있는 플레이어의 색상 체크
-        for(int i = 0; i < myPlayer.Count; i++)
+        m_player = GameObject.FindGameObjectsWithTag("Player");
+        foreach(GameObject player in m_player)
         {
-            //Debug.Log(myPlayer[i].GetComponent<SpriteRenderer>().material.GetColor("_PlayerColor"));
-            Debug.Log(i);
+            Debug.Log(player.GetComponent<CharacterMove>().playerColor);
         }
-    }*/
+    }
 
     [ContextMenu("정보")]
     void Info()
     {
         if (PhotonNetwork.InRoom)
         {
-            //print("플레이어들의 색상 : ");
-            //PlayerColorCheck();
+            GetPlayer();
             print("현재 방 인원수 : " + PhotonNetwork.CurrentRoom.PlayerCount);
             print("현재 방 최대인원수 : " + PhotonNetwork.CurrentRoom.MaxPlayers);
 
@@ -64,15 +64,16 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks /*, IPunObservable*/
         }
     }
 
+    // 변수 동기화
     /*public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {
-            stream.SendNext(myPlayer);
+            stream.SendNext(checkColor);
         }
         else
         {
-            myPlayer = (GameObject)stream.ReceiveNext();
+            checkColor = (bool[])stream.ReceiveNext();
         }
     }*/
 }

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class CharacterMove : MonoBehaviourPunCallbacks , IPunObservable
+public class CharacterMove : MonoBehaviourPunCallbacks, IPunObservable
 {
     private Animator animator;
 
@@ -70,18 +70,15 @@ public class CharacterMove : MonoBehaviourPunCallbacks , IPunObservable
         }
     }
 
-    public void setColor()
+    [PunRPC]
+    public void setColor(EPlayerColor color)
     {
-        if(spriteRender == null)
+        playerColor = color;
+        if (spriteRender == null)
         {
             spriteRender = GetComponent<SpriteRenderer>();
         }
         spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
-    }
-
-    public void change()
-    {
-        gameObject.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)0));
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

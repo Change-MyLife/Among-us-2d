@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*, IPunInstantiateMagicCallback*/
+public class CharacterColorUI : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private Image CrewImage;
@@ -35,14 +35,14 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
 
     public void OnColorButton(int Number)
     {
-        SpawnCharacter.myPlayer.GetComponent<CharacterMove>().change();
-
-        /*//photonView.RPC("ChangeColor",RpcTarget.All,Number);
         // 선택가능한 색상?
         if (!ColorButtons[Number].transform.GetChild(0).gameObject.activeSelf && SpawnCharacter.myPlayer.GetComponent<PhotonView>().IsMine)
         {
             // 자신의 캐릭터 색깔 변경
-            SpawnCharacter.myPlayer.GetComponent<SpriteRenderer>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Number));
+            if (SpawnCharacter.myPlayer.GetComponent<PhotonView>().IsMine)
+            {
+                SpawnCharacter.myPlayer.GetComponent<PhotonView>().RPC("setColor", RpcTarget.AllBuffered, (EPlayerColor)Number);
+            }
 
             // UI 캐릭터의 색상 변경
             CrewImage.GetComponent<Image>().material.SetColor("_PlayerColor", PlayerColor.GetColor((EPlayerColor)Number));
@@ -57,29 +57,6 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks/*, IPunObservable*/ /*
             }
         }
 
-        PrevNumber = Number;*/
+        PrevNumber = Number;
     }
-
-    /*public void OnPhotonInstantiate(PhotonMessageInfo info)
-    {
-        info.Sender.TagObject = this.gameObject;
-    }*/
-
-    [PunRPC]
-    void ChangeColor(int Number)
-    {
-        
-    }
-
-    /*public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.IsWriting)
-        {
-            stream.SendNext(ColorButtons);
-        }
-        else
-        {
-            ColorButtons = (Button[])stream.ReceiveNext();
-        }
-    }*/
 }

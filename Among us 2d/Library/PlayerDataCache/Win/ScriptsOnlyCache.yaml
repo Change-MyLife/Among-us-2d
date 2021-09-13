@@ -876,7 +876,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: f2acf32ad78bb1e9f6ca97e0fdf8c6f0
+      Hash: 3a08ace55f149b66f4ec19e43d73244f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnCharacter

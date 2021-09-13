@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3424752016253945782}
   m_Layer: 8
   m_Name: Lobby Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
