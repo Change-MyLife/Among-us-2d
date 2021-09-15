@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Photon.Pun;
 using Photon.Realtime;
@@ -16,6 +17,10 @@ public class CharacterMove : MonoBehaviourPunCallbacks, IPunObservable
 
     public EPlayerColor playerColor;
 
+    [SerializeField]
+    private Text nicknameText;
+    private string nickname;
+
     void Start()
     {
         spriteRender = GetComponent<SpriteRenderer>();
@@ -30,6 +35,30 @@ public class CharacterMove : MonoBehaviourPunCallbacks, IPunObservable
             cam.transform.SetParent(transform);
             cam.transform.localPosition = new Vector3(0f, 0f, -10f);
             cam.orthographicSize = 2.5f;
+        }
+
+        // 플레이어 닉네임 설정
+        photonView.RPC("SetNickName", RpcTarget.AllBuffered);
+
+
+        // LobbyManger RPC
+        LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
+        LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void SetNickName()
+    {
+        nickname = photonView.Owner.NickName;
+        nicknameText.text = nickname;
+    }
+
+    private void OnDestroy()
+    {
+        if (LobbyManger.Instance != null)
+        {
+            LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
+            LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
         }
     }
 
@@ -62,11 +91,18 @@ public class CharacterMove : MonoBehaviourPunCallbacks, IPunObservable
                     transform.position += dir * speed * Time.deltaTime;
                     isMove = dir.magnitude != 0f;
                 }
-                
             }
-
             // 애니메이터 파라미터
             animator.SetBool("IsMove", isMove);
+        }
+
+        if(transform.localScale.x < 0)
+        {
+            nicknameText.transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (transform.localScale.x > 0)
+        {
+            nicknameText.transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
 
@@ -86,10 +122,12 @@ public class CharacterMove : MonoBehaviourPunCallbacks, IPunObservable
         if (stream.IsWriting)
         {
             stream.SendNext(playerColor);
+            //stream.SendNext(nickname);
         }
         else
         {
             playerColor = (EPlayerColor)stream.ReceiveNext();
+            //nickname = (string)stream.ReceiveNext();
         }
     }
 }

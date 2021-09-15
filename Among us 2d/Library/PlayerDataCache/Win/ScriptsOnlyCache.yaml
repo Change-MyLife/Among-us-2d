@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Crew
     - FloatingCrew
     - LaptopTrigger
+    - LobbyManger
     - LobbySettingUI
     - MainMenuUI
     - OnlineUI
@@ -79,8 +80,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -194,6 +197,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16574}
     - Class: 114
       Script: {instanceID: 16676}
+    - Class: 114
+      Script: {instanceID: 21472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -365,6 +370,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16236}
     - Class: 114
       Script: {instanceID: 16382}
+    - Class: 114
+      Script: {instanceID: 16404}
     - Class: 114
       Script: {instanceID: 16520}
     - Class: 114
@@ -876,7 +883,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 3a08ace55f149b66f4ec19e43d73244f
+      Hash: b0461cb1a3871955d2011dc1e2b91a8f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnCharacter
@@ -1140,7 +1147,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPlayerTtlProperty
   - hash:
       serializedVersion: 2
-      Hash: 21570a2b041481e588608fd6d3c50df3
+      Hash: 360c8f9868f7b48f6010469dacbabe99
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterMove
@@ -2248,6 +2255,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d0aedd399083ce1017e927943867d566
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbyManger
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity

@@ -5,9 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class CreateRoomUI : MonoBehaviourPunCallbacks
 {
+    public static CreateRoomUI RoomInfo;
+
     public enum maps { THESKELD, POLUS, MIRAHQ }
 
     [SerializeField]
@@ -111,19 +114,47 @@ public class CreateRoomUI : MonoBehaviourPunCallbacks
         {
             if(i == imposterCount - 1)
             {
+                //maxplayers[i].image.color = new Color(1f, 1f, 1f, 1f);
                 cb = impostors[i].colors;
                 cb.normalColor = new Color(1f, 1f, 1f, 1f);
                 impostors[i].colors = cb;
             }
             else
             {
+                //maxplayers[i].image.color = new Color(1f, 1f, 1f, 0f);
                 cb = impostors[i].colors;
                 cb.normalColor = new Color(1f, 1f, 1f, 0f);
                 impostors[i].colors = cb;
             }
         }
 
-        // 제약을 주는 코드 입력!! (미정)
+        // 임포스터 수가 1 == 4 , 2 == 7, 3 == 9
+        int limitMinPlayer = imposterCount == 1 ? 4 : imposterCount == 2 ? 7 : 9;
+
+        // 최대 인원수가 최소 인원수보다 작을경우
+        if(roomdata.playerCount < limitMinPlayer)
+        {
+            UpdateMaxPlayerCount(limitMinPlayer);
+        }
+        else
+        {
+            UpdateMaxPlayerCount(roomdata.playerCount);
+        }
+
+        for(int i = 0; i < maxplayers.Count; i++)
+        {
+            var text = maxplayers[i].GetComponentInChildren<Text>();
+            if(i < limitMinPlayer - 4)
+            {
+                maxplayers[i].interactable = false;
+                text.color = Color.gray;
+            }
+            else
+            {
+                maxplayers[i].interactable = true;
+                text.color = Color.white;
+            }
+        }
 
         UpdateCrewImpostors();
     }
@@ -133,10 +164,16 @@ public class CreateRoomUI : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
+        // 방 옵션
+        RoomOptions roomOption = new RoomOptions();
+        roomOption.MaxPlayers = (byte)roomdata.playerCount;
+        roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
+
         Debug.Log("Connected.");
         Debug.Log("roomMaxPlayers" + (byte)roomdata.playerCount);
         PhotonNetwork.LocalPlayer.NickName = Setting.nickname;
-        PhotonNetwork.CreateRoom("Room", new RoomOptions { MaxPlayers = (byte)roomdata.playerCount });
+      
+        PhotonNetwork.CreateRoom("Room", roomOption);
     }
 
     public override void OnDisconnected(DisconnectCause cause)
@@ -156,9 +193,13 @@ public class CreateRoomUI : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsConnected)
         {
+            // 방 옵션
+            RoomOptions roomOption = new RoomOptions();
+            roomOption.MaxPlayers = (byte)roomdata.playerCount;
+            roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
+
             Debug.Log("Connected.");
-            Debug.Log("roomMaxPlayers" + (byte)roomdata.playerCount);
-            PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = (byte)roomdata.playerCount });
+            PhotonNetwork.CreateRoom(null, roomOption);
         }
         else
         {
