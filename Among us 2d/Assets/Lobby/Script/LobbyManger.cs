@@ -25,6 +25,8 @@ public class LobbyManger : MonoBehaviourPunCallbacks
 
         Instance = this;
         imposters = (int)CP["imposter"];
+
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
@@ -77,7 +79,6 @@ public class LobbyManger : MonoBehaviourPunCallbacks
     public void OnClickStartButton()
     {
         Debug.Log("Game Start");
-        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.LoadLevel(2);
     }
 }
