@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 938eccec2b9fe884da27d8507976911a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9209150200934822978
+    second: PC Computer - Among Us - The Skeld Admin_0
+  - first:
+      213: 7617027112775360670
+    second: PC Computer - Among Us - The Skeld Admin_1
+  - first:
+      213: 4206038108898899634
+    second: PC Computer - Among Us - The Skeld Admin_2
+  - first:
+      213: -4086669630542371192
+    second: PC Computer - Among Us - The Skeld Admin_3
+  - first:
+      213: 5966510263510228565
+    second: PC Computer - Among Us - The Skeld Admin_4
+  - first:
+      213: -97128483404688821
+    second: PC Computer - Among Us - The Skeld Admin_5
+  - first:
+      213: -4336011787801129317
+    second: PC Computer - Among Us - The Skeld Admin_6
+  - first:
+      213: -6161541427016231235
+    second: PC Computer - Among Us - The Skeld Admin_7
+  - first:
+      213: -9153603234880253179
+    second: PC Computer - Among Us - The Skeld Admin_8
+  - first:
+      213: -4181603716991685785
+    second: PC Computer - Among Us - The Skeld Admin_9
+  - first:
+      213: -1425915886125804381
+    second: PC Computer - Among Us - The Skeld Admin_10
+  - first:
+      213: 3619820859047806013
+    second: PC Computer - Among Us - The Skeld Admin_11
+  - first:
+      213: -4788882912631350325
+    second: PC Computer - Among Us - The Skeld Admin_12
+  - first:
+      213: 3237806861323415674
+    second: PC Computer - Among Us - The Skeld Admin_13
+  - first:
+      213: 6768734842985062183
+    second: PC Computer - Among Us - The Skeld Admin_14
+  - first:
+      213: -538390029505501825
+    second: PC Computer - Among Us - The Skeld Admin_15
+  - first:
+      213: 5267781790460093391
+    second: PC Computer - Among Us - The Skeld Admin_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 358
+        width: 578
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244ffe9c0597dcf70800000000000000
+      internalID: 9209150200934822978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_1
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 300
+        width: 567
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90ae756dcd15b960800000000000000
+      internalID: 7617027112775360670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_2
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 226
+        width: 176
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6bca02069de5a30800000000000000
+      internalID: 4206038108898899634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_3
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 599
+        width: 557
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88625258f9b3947c0800000000000000
+      internalID: -4086669630542371192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 186
+        width: 204
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55edf35097d4dc250800000000000000
+      internalID: 5966510263510228565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_5
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 222
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b425711b82ee6aef0800000000000000
+      internalID: -97128483404688821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 221
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e053e804463d3c0800000000000000
+      internalID: -4336011787801129317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 239
+        width: 116
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db618d5a7becd7aa0800000000000000
+      internalID: -6161541427016231235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 118
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50398121b5ed7f080800000000000000
+      internalID: -9153603234880253179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 118
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76be1411395f7f5c0800000000000000
+      internalID: -4181603716991685785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_10
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 117
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a492ef6e01263ce0800000000000000
+      internalID: -1425915886125804381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 156
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34081684ef2c3230800000000000000
+      internalID: 3619820859047806013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_12
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 155
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb9ba11d587a8db0800000000000000
+      internalID: -4788882912631350325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 155
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70318c8f200fec20800000000000000
+      internalID: 3237806861323415674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_14
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 155
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f1fe63a706fed50800000000000000
+      internalID: 6768734842985062183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_15
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 157
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7566b4ee114788f0800000000000000
+      internalID: -538390029505501825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Admin_16
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 153
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc325a6e0abea1940800000000000000
+      internalID: 5267781790460093391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
