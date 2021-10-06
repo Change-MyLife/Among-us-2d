@@ -1,0 +1,1670 @@
+fileFormatVersion: 2
+guid: 079bbf66973299549b6a7011b3a3f7f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2672373088042527525
+    second: PC Computer - Among Us - The Skeld Engines 1_0
+  - first:
+      213: 3015929976115638939
+    second: PC Computer - Among Us - The Skeld Engines 1_1
+  - first:
+      213: 2066135791019626029
+    second: PC Computer - Among Us - The Skeld Engines 1_2
+  - first:
+      213: 8901115457515156159
+    second: PC Computer - Among Us - The Skeld Engines 1_3
+  - first:
+      213: -3039758074849385276
+    second: PC Computer - Among Us - The Skeld Engines 1_4
+  - first:
+      213: -2272018616791801958
+    second: PC Computer - Among Us - The Skeld Engines 1_5
+  - first:
+      213: -5128630899820843209
+    second: PC Computer - Among Us - The Skeld Engines 1_6
+  - first:
+      213: 8711260027207175252
+    second: PC Computer - Among Us - The Skeld Engines 1_7
+  - first:
+      213: 6238304203953397263
+    second: PC Computer - Among Us - The Skeld Engines 1_8
+  - first:
+      213: 7579875142760441896
+    second: PC Computer - Among Us - The Skeld Engines 1_9
+  - first:
+      213: 5596327171515833186
+    second: PC Computer - Among Us - The Skeld Engines 1_10
+  - first:
+      213: -919904476901384821
+    second: PC Computer - Among Us - The Skeld Engines 1_11
+  - first:
+      213: -389551228731514156
+    second: PC Computer - Among Us - The Skeld Engines 1_12
+  - first:
+      213: -2374208254785282155
+    second: PC Computer - Among Us - The Skeld Engines 1_13
+  - first:
+      213: 96884577488637539
+    second: PC Computer - Among Us - The Skeld Engines 1_14
+  - first:
+      213: -6090567418803256282
+    second: PC Computer - Among Us - The Skeld Engines 1_15
+  - first:
+      213: 8991168990869591913
+    second: PC Computer - Among Us - The Skeld Engines 1_16
+  - first:
+      213: -2587792912590922761
+    second: PC Computer - Among Us - The Skeld Engines 1_17
+  - first:
+      213: 522677199359576736
+    second: PC Computer - Among Us - The Skeld Engines 1_18
+  - first:
+      213: -1087370180286525972
+    second: PC Computer - Among Us - The Skeld Engines 1_19
+  - first:
+      213: -2853147241793961984
+    second: PC Computer - Among Us - The Skeld Engines 1_20
+  - first:
+      213: -9001321564854041758
+    second: PC Computer - Among Us - The Skeld Engines 1_21
+  - first:
+      213: 2459991030863028717
+    second: PC Computer - Among Us - The Skeld Engines 1_22
+  - first:
+      213: 4601369144365594746
+    second: PC Computer - Among Us - The Skeld Engines 1_23
+  - first:
+      213: 5688744237666958500
+    second: PC Computer - Among Us - The Skeld Engines 1_24
+  - first:
+      213: -6668791544378743328
+    second: PC Computer - Among Us - The Skeld Engines 1_25
+  - first:
+      213: 3926790601342262961
+    second: PC Computer - Among Us - The Skeld Engines 1_26
+  - first:
+      213: -7212142912845536062
+    second: PC Computer - Among Us - The Skeld Engines 1_27
+  - first:
+      213: 5051639818702137776
+    second: PC Computer - Among Us - The Skeld Engines 1_28
+  - first:
+      213: 4332573943636100120
+    second: PC Computer - Among Us - The Skeld Engines 1_29
+  - first:
+      213: -3004073322904064390
+    second: PC Computer - Among Us - The Skeld Engines 1_30
+  - first:
+      213: -1257890001364849511
+    second: PC Computer - Among Us - The Skeld Engines 1_31
+  - first:
+      213: -3107972788997546283
+    second: PC Computer - Among Us - The Skeld Engines 1_33
+  - first:
+      213: 8596493220102042646
+    second: PC Computer - Among Us - The Skeld Engines 1_34
+  - first:
+      213: 6421570474397962947
+    second: PC Computer - Among Us - The Skeld Engines 1_35
+  - first:
+      213: -1020994008149448661
+    second: PC Computer - Among Us - The Skeld Engines 1_36
+  - first:
+      213: 7908473236765293415
+    second: PC Computer - Among Us - The Skeld Engines 1_37
+  - first:
+      213: -5347824588130803677
+    second: PC Computer - Among Us - The Skeld Engines 1_38
+  - first:
+      213: -8572222886475272816
+    second: PC Computer - Among Us - The Skeld Engines 1_39
+  - first:
+      213: 6757765960783117502
+    second: PC Computer - Among Us - The Skeld Engines 1_40
+  - first:
+      213: 3565754513861363335
+    second: PC Computer - Among Us - The Skeld Engines 1_41
+  - first:
+      213: -191101840048429821
+    second: PC Computer - Among Us - The Skeld Engines 1_42
+  - first:
+      213: 8337752840504905128
+    second: PC Computer - Among Us - The Skeld Engines 1_43
+  - first:
+      213: -161509953021306233
+    second: PC Computer - Among Us - The Skeld Engines 1_44
+  - first:
+      213: 6528046910744814959
+    second: PC Computer - Among Us - The Skeld Engines 1_45
+  - first:
+      213: 570438692735302156
+    second: PC Computer - Among Us - The Skeld Engines 1_46
+  - first:
+      213: -5115628954963895525
+    second: PC Computer - Among Us - The Skeld Engines 1_47
+  - first:
+      213: -1910762090267777830
+    second: PC Computer - Among Us - The Skeld Engines 1_48
+  - first:
+      213: -1404728085456078097
+    second: PC Computer - Among Us - The Skeld Engines 1_49
+  - first:
+      213: -2837134813767016436
+    second: PC Computer - Among Us - The Skeld Engines 1_50
+  - first:
+      213: -1899875219501652663
+    second: PC Computer - Among Us - The Skeld Engines 1_51
+  - first:
+      213: -8849666778420152651
+    second: PC Computer - Among Us - The Skeld Engines 1_52
+  - first:
+      213: -621165948228467829
+    second: PC Computer - Among Us - The Skeld Engines 1_53
+  - first:
+      213: -8418867681173976515
+    second: PC Computer - Among Us - The Skeld Engines 1_54
+  - first:
+      213: 7876331655744246198
+    second: PC Computer - Among Us - The Skeld Engines 1_55
+  - first:
+      213: 6155698416808579292
+    second: PC Computer - Among Us - The Skeld Engines 1_56
+  - first:
+      213: -8485923327924143481
+    second: PC Computer - Among Us - The Skeld Engines 1_57
+  - first:
+      213: -8700468181404363102
+    second: PC Computer - Among Us - The Skeld Engines 1_58
+  - first:
+      213: 816283577966782795
+    second: PC Computer - Among Us - The Skeld Engines 1_59
+  - first:
+      213: 7679894980799846362
+    second: PC Computer - Among Us - The Skeld Engines 1_60
+  - first:
+      213: -2563275929876036202
+    second: PC Computer - Among Us - The Skeld Engines 1_61
+  - first:
+      213: -2844745328845791860
+    second: PC Computer - Among Us - The Skeld Engines 1_62
+  - first:
+      213: -6616258403082785058
+    second: PC Computer - Among Us - The Skeld Engines 1_63
+  - first:
+      213: 6112448936384690863
+    second: PC Computer - Among Us - The Skeld Engines 1_64
+  - first:
+      213: 2396200408909387678
+    second: PC Computer - Among Us - The Skeld Engines 1_65
+  - first:
+      213: -232867729520512111
+    second: PC Computer - Among Us - The Skeld Engines 1_66
+  - first:
+      213: -2536955285433720355
+    second: PC Computer - Among Us - The Skeld Engines 1_67
+  - first:
+      213: -270969613145254283
+    second: PC Computer - Among Us - The Skeld Engines 1_68
+  - first:
+      213: -7448808702192639903
+    second: PC Computer - Among Us - The Skeld Engines 1_69
+  - first:
+      213: -407403024956402227
+    second: PC Computer - Among Us - The Skeld Engines 1_70
+  - first:
+      213: 7310984357027048305
+    second: PC Computer - Among Us - The Skeld Engines 1_71
+  - first:
+      213: 3867608935222120380
+    second: PC Computer - Among Us - The Skeld Engines 1_72
+  - first:
+      213: 6113961814269180320
+    second: PC Computer - Among Us - The Skeld Engines 1_73
+  - first:
+      213: 6090420703091460628
+    second: PC Computer - Among Us - The Skeld Engines 1_74
+  - first:
+      213: 8867746150768046655
+    second: PC Computer - Among Us - The Skeld Engines 1_75
+  - first:
+      213: -5539160073757774457
+    second: PC Computer - Among Us - The Skeld Engines 1_76
+  - first:
+      213: -6491913258263406881
+    second: PC Computer - Among Us - The Skeld Engines 1_77
+  - first:
+      213: -1779526650017210463
+    second: PC Computer - Among Us - The Skeld Engines 1_78
+  - first:
+      213: -5996536675419573079
+    second: PC Computer - Among Us - The Skeld Engines 1_79
+  - first:
+      213: -6973946075272296049
+    second: PC Computer - Among Us - The Skeld Engines 1_80
+  - first:
+      213: 2115404913084770319
+    second: PC Computer - Among Us - The Skeld Engines 1_81
+  - first:
+      213: -6078345555636511499
+    second: PC Computer - Among Us - The Skeld Engines 1_82
+  - first:
+      213: -4974593087485928037
+    second: PC Computer - Among Us - The Skeld Engines 1_83
+  - first:
+      213: 5354671343467149459
+    second: PC Computer - Among Us - The Skeld Engines 1_84
+  - first:
+      213: -2007046454076187627
+    second: PC Computer - Among Us - The Skeld Engines 1_85
+  - first:
+      213: -7378077532711892722
+    second: PC Computer - Among Us - The Skeld Engines 1_86
+  - first:
+      213: 325278974176106642
+    second: PC Computer - Among Us - The Skeld Engines 1_87
+  - first:
+      213: -8823289364099614237
+    second: PC Computer - Among Us - The Skeld Engines 1_88
+  - first:
+      213: -3612187448531448546
+    second: PC Computer - Among Us - The Skeld Engines 1_89
+  - first:
+      213: 3528991367329433813
+    second: PC Computer - Among Us - The Skeld Engines 1_90
+  - first:
+      213: 8446467738371643530
+    second: PC Computer - Among Us - The Skeld Engines 1_91
+  - first:
+      213: -1747451436923268961
+    second: PC Computer - Among Us - The Skeld Engines 1_92
+  - first:
+      213: 2959504191199038499
+    second: PC Computer - Among Us - The Skeld Engines 1_93
+  - first:
+      213: 7464615016256081899
+    second: PC Computer - Among Us - The Skeld Engines 1_94
+  - first:
+      213: -1500159078157401030
+    second: PC Computer - Among Us - The Skeld Engines 1_95
+  - first:
+      213: -8868633376846306782
+    second: PC Computer - Among Us - The Skeld Engines 1_96
+  - first:
+      213: -6187259032939702646
+    second: PC Computer - Among Us - The Skeld Engines 1_97
+  - first:
+      213: 2011248356945066427
+    second: PC Computer - Among Us - The Skeld Engines 1_98
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 805
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b511179e52aad40800000000000000
+      internalID: 5596327171515833186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 815
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d500b80c7db33f0800000000000000
+      internalID: -919904476901384821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_12
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 794
+        width: 71
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d224ada839089af0800000000000000
+      internalID: -389551228731514156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 816
+        width: 67
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f19bedb2e1d0fd0800000000000000
+      internalID: -2374208254785282155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 802
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e8c698204385100800000000000000
+      internalID: 96884577488637539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_15
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 817
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6240aa9a335f97ba0800000000000000
+      internalID: -6090567418803256282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_16
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 817
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9671a485f8c07cc70800000000000000
+      internalID: 8991168990869591913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_17
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 800
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb9eb48e00561cd0800000000000000
+      internalID: -2587792912590922761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_18
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 797
+        width: 71
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa0600c42ce04700800000000000000
+      internalID: 522677199359576736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_19
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 811
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced4ba80592e8e0f0800000000000000
+      internalID: -1087370180286525972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_20
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 809
+        width: 63
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0004cf043b59768d0800000000000000
+      internalID: -2853147241793961984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_21
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 784
+        width: 70
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263cfc15ab1e41380800000000000000
+      internalID: -9001321564854041758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_22
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 812
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1ec391fc4a32220800000000000000
+      internalID: 2459991030863028717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_23
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 814
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78ba529bd85bdf30800000000000000
+      internalID: 4601369144365594746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 702
+        width: 11
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac70307eba72fe40800000000000000
+      internalID: 5688744237666958500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 702
+        width: 17
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e52d245c61b373a0800000000000000
+      internalID: -6668791544378743328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_26
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 702
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be19543f33ce7630800000000000000
+      internalID: 3926790601342262961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_27
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 702
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4ad7a7b3259eb90800000000000000
+      internalID: -7212142912845536062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 702
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9a5fe76a70b1640800000000000000
+      internalID: 5051639818702137776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_29
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 702
+        width: 57
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8140b89fb05602c30800000000000000
+      internalID: 4332573943636100120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_30
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 702
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e6315aa336f46d0800000000000000
+      internalID: -3004073322904064390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_31
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 702
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ce12655b31b8ee0800000000000000
+      internalID: -1257890001364849511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_61
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 520
+        width: 10
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6950e626f1a6d6cd0800000000000000
+      internalID: -2563275929876036202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_62
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 520
+        width: 11
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dd1bd023f6588d0800000000000000
+      internalID: -2844745328845791860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_63
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 520
+        width: 22
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edeae0e69045e24a0800000000000000
+      internalID: -6616258403082785058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_64
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 520
+        width: 23
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa7ce82ce7c3d450800000000000000
+      internalID: 6112448936384690863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_65
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 520
+        width: 40
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9790b78393014120800000000000000
+      internalID: 2396200408909387678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_66
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 520
+        width: 41
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1933746a800b4ccf0800000000000000
+      internalID: -232867729520512111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_67
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 520
+        width: 126
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd16ca8fb9ceaccd0800000000000000
+      internalID: -2536955285433720355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_68
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 418
+        width: 126
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5765d8f82925d3cf0800000000000000
+      internalID: -270969613145254283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 418
+        width: 52
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16028f963f380a890800000000000000
+      internalID: -7448808702192639903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_70
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 418
+        width: 53
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5dd097b1d985af0800000000000000
+      internalID: -407403024956402227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_71
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 418
+        width: 41
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17be8079985d57560800000000000000
+      internalID: 7310984357027048305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_72
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 418
+        width: 42
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf8a0ac5d18ca530800000000000000
+      internalID: 3867608935222120380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_73
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 418
+        width: 30
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a931dd70e729d450800000000000000
+      internalID: 6113961814269180320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_74
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 418
+        width: 31
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a837c6c55858450800000000000000
+      internalID: 6090420703091460628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_75
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 418
+        width: 19
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32fdda0420901b70800000000000000
+      internalID: 8867746150768046655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_76
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 418
+        width: 20
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d24a9b243f023b0800000000000000
+      internalID: -5539160073757774457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_77
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 418
+        width: 8
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd69f88894718e5a0800000000000000
+      internalID: -6491913258263406881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_78
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 418
+        width: 9
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af126da0f9dd47e0800000000000000
+      internalID: -1779526650017210463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_79
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 418
+        width: 9
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4b30b2aa508cca0800000000000000
+      internalID: -5996536675419573079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_80
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 418
+        width: 10
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f894aac7ef0973f90800000000000000
+      internalID: -6973946075272296049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_81
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 418
+        width: 10
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08a8808f8d6b5d10800000000000000
+      internalID: 2115404913084770319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_82
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 418
+        width: 11
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc163eebe065aba0800000000000000
+      internalID: -6078345555636511499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_83
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 320
+        width: 32
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d994681f1b6fab0800000000000000
+      internalID: -4974593087485928037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_84
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 302
+        width: 32
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398b254773d9f4a40800000000000000
+      internalID: 5354671343467149459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_85
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 275
+        width: 32
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cd41142e98524e0800000000000000
+      internalID: -2007046454076187627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_86
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 215
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09ca61239dcb9990800000000000000
+      internalID: -7378077532711892722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_87
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 215
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2989bace08f938400800000000000000
+      internalID: 325278974176106642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_88
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 215
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e93c5632116d8580800000000000000
+      internalID: -8823289364099614237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_89
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 12
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d882c57aeeeddc0800000000000000
+      internalID: -3612187448531448546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_90
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 12
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8471183fe79f030800000000000000
+      internalID: 3528991367329433813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_91
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 12
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88507028a1e73570800000000000000
+      internalID: 8446467738371643530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_92
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 88
+        width: 32
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9051ff2d2ecfb7e0800000000000000
+      internalID: -1747451436923268961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_93
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 107
+        width: 32
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cc2bbb165421920800000000000000
+      internalID: 2959504191199038499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_94
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 125
+        width: 32
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef8dfcdec3a79760800000000000000
+      internalID: 7464615016256081899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_95
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 121
+        width: 32
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34c9df344d5e2be0800000000000000
+      internalID: -1500159078157401030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_96
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 117
+        width: 32
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22227e98ee84ce480800000000000000
+      internalID: -8868633376846306782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_97
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 12
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a865d48e0b0722aa0800000000000000
+      internalID: -6187259032939702646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Among Us - The Skeld Engines 1_98
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 12
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb97cce79b369eb10800000000000000
+      internalID: 2011248356945066427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
