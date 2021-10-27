@@ -21,11 +21,13 @@ public class LobbyManger : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
+        // 방 임포스터 설정 값 가져오기
         Hashtable CP = PhotonNetwork.CurrentRoom.CustomProperties;
 
         Instance = this;
         imposters = (int)CP["imposter"];
 
+        // 모든 플레이어 씬 동시 이동 = true
         PhotonNetwork.AutomaticallySyncScene = true;
     }
 
