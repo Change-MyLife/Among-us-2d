@@ -122,12 +122,10 @@ public class CharacterMove : MonoBehaviourPunCallbacks, IPunObservable
         if (stream.IsWriting)
         {
             stream.SendNext(playerColor);
-            //stream.SendNext(nickname);
         }
         else
         {
             playerColor = (EPlayerColor)stream.ReceiveNext();
-            //nickname = (string)stream.ReceiveNext();
         }
     }
 }

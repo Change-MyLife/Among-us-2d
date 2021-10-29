@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class LobbySettingUI : MonoBehaviour
+public class LobbySettingUI : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private Button MouseControlButton;
@@ -19,7 +19,7 @@ public class LobbySettingUI : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void OnEnable()
+    public override void OnEnable()
     {
         // 캐릭터 정지
         CharacterMove.isMoveable = false;
@@ -35,6 +35,7 @@ public class LobbySettingUI : MonoBehaviour
                 KeyboardMouseControlButton.image.color = Color.green;
                 break;
         }
+        base.OnEnable();
     }
 
     public void SetControlMode(int controlType)
@@ -72,7 +73,14 @@ public class LobbySettingUI : MonoBehaviour
     public void OutGameButton()
     {
         PhotonNetwork.LeaveRoom();
+    }
+
+    public override void OnLeftRoom()
+    {
+        //PhotonNetwork.LoadLevel(0);
         SceneManager.LoadScene("MainMenuScene");
+
+        base.OnLeftRoom();
     }
 
     public void ReturnGameButton()

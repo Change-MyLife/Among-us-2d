@@ -27,15 +27,6 @@ public class PlayerCharMove : MonoBehaviourPunCallbacks
         }
     }
 
-    private void OnDestroy()
-    {
-        if (LobbyManger.Instance != null)
-        {
-            LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
-            LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
-        }
-    }
-
     void Update()
     {
         // UI 버튼을 클릭시 캐릭터 움직임 x
@@ -50,8 +41,8 @@ public class PlayerCharMove : MonoBehaviourPunCallbacks
             if (Setting.controlType == EcontrolType.KeyboardMouse)
             {
                 Vector3 dir = Vector3.ClampMagnitude(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f), 1f);
-                if (dir.x < 0f) transform.localScale = new Vector3(-0.5f, 0.5f, 1f);
-                else if (dir.x > 0f) transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+                if (dir.x < 0f) transform.localScale = new Vector3(-0.35f, 0.35f, 1f);
+                else if (dir.x > 0f) transform.localScale = new Vector3(0.35f, 0.35f, 1f);
                 transform.position += dir * speed * Time.deltaTime;
                 isMove = dir.magnitude != 0f;
             }
@@ -60,8 +51,8 @@ public class PlayerCharMove : MonoBehaviourPunCallbacks
                 if (Input.GetMouseButton(0))
                 {
                     Vector3 dir = (Input.mousePosition - new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0f)).normalized;
-                    if (dir.x < 0f) transform.localScale = new Vector3(-0.5f, 0.5f, 1f);
-                    else if (dir.x > 0f) transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+                    if (dir.x < 0f) transform.localScale = new Vector3(-0.35f, 0.35f, 1f);
+                    else if (dir.x > 0f) transform.localScale = new Vector3(0.35f, 0.35f, 1f);
                     transform.position += dir * speed * Time.deltaTime;
                     isMove = dir.magnitude != 0f;
                 }
