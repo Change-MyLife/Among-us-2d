@@ -13,8 +13,20 @@ public class PlayerCharMove : MonoBehaviourPunCallbacks
     static public bool isMoveable;
     public float speed = 2f;
 
+    // 캐릭터 색상 변수
+    private SpriteRenderer spriteRender;
+    public EPlayerColor playerColor;
+
+    [SerializeField]
+    private Text nicknameText;
+    private string nickname;
+
     void Start()
     {
+        // 캐릭터 색상 초기화
+        spriteRender = GetComponent<SpriteRenderer>();
+        spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
+
         isMoveable = true;
         animator = GetComponent<Animator>();
 
@@ -60,5 +72,35 @@ public class PlayerCharMove : MonoBehaviourPunCallbacks
             // 애니메이터 파라미터
             animator.SetBool("IsMove", isMove);
         }
+
+        if (transform.localScale.x < 0)
+        {
+            nicknameText.transform.localScale = new Vector3(-0.3f, 0.3f, 0.3f);
+        }
+        else if (transform.localScale.x > 0)
+        {
+            nicknameText.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        }
+    }
+
+    // 캐릭터 닉네임 변경
+    [PunRPC]
+    void SetNickName()
+    {
+        nickname = photonView.Owner.NickName;
+        nicknameText.text = nickname;
+    }
+
+
+    // 캐릭터 색상 변경
+    [PunRPC]
+    public void setColor(EPlayerColor color)
+    {
+        playerColor = color;
+        if (spriteRender == null)
+        {
+            spriteRender = GetComponent<SpriteRenderer>();
+        }
+        spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
     }
 }

@@ -72,7 +72,14 @@ public class LobbySettingUI : MonoBehaviourPunCallbacks
 
     public void OutGameButton()
     {
-        PhotonNetwork.LeaveRoom();
+        if (PhotonNetwork.CurrentRoom == null)
+        {
+            SceneManager.LoadScene("MainMenuScene");
+        }
+        else
+        {
+            PhotonNetwork.LeaveRoom();
+        }
     }
 
     public override void OnLeftRoom()

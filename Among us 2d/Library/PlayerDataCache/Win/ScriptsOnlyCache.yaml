@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - PlayerCharMove
     - SettingUI
     - SpawnCharacter
+    - SpawnGameChar
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -161,9 +162,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16388}
     - Class: 114
+      Script: {instanceID: 16410}
+    - Class: 114
       Script: {instanceID: 16580}
     - Class: 114
       Script: {instanceID: 16682}
+    - Class: 114
+      Script: {instanceID: 78876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -181,6 +186,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
     Assets/Scenes/LobbyScene.unity:
     - Class: 1
@@ -867,7 +874,7 @@ ScriptsOnlyBuild:
     className: FriendListCell
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+      Hash: 360c8f9868f7b48f6010469dacbabe99
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCharMove
@@ -2329,6 +2336,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b0461cb1a3871955d2011dc1e2b91a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpawnGameChar
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity

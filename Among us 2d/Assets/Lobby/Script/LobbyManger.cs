@@ -61,7 +61,9 @@ public class LobbyManger : MonoBehaviourPunCallbacks
         {
             startbutton.SetActive(true);
 
-            if(currentplayer >= minplayer)
+            startbutton.GetComponent<Image>().raycastTarget = true;
+            startbutton.GetComponent<Button>().interactable = true;
+            /*if(currentplayer >= minplayer)
             {
                 startbutton.GetComponent<Image>().raycastTarget = true;
                 startbutton.GetComponent<Button>().interactable = true;
@@ -70,7 +72,7 @@ public class LobbyManger : MonoBehaviourPunCallbacks
             {
                 startbutton.GetComponent<Image>().raycastTarget = false;
                 startbutton.GetComponent<Button>().interactable = false;
-            }
+            }*/
         }
         else
         {
@@ -81,6 +83,8 @@ public class LobbyManger : MonoBehaviourPunCallbacks
     public void OnClickStartButton()
     {
         Debug.Log("Game Start");
+        //MoveToGameScene();
+        PhotonNetwork.IsMessageQueueRunning = false;
         PhotonNetwork.LoadLevel(2);
     }
 }
