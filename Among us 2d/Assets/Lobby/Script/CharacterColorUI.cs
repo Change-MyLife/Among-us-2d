@@ -14,11 +14,12 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks
 
     int PrevNumber = -1;
 
-    /*private void OnEnable()
+    public override void OnEnable()
     {
         // 캐릭터 정지
-        CharacterMove.isMoveable = false;
-    }*/
+        LobbyChar.isMoveable = false;
+        base.OnEnable();
+    }
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class CharacterColorUI : MonoBehaviourPunCallbacks
     public void Close()
     {
         // 캐릭터 이동
-        CharacterMove.isMoveable = true;
+        LobbyChar.isMoveable = true;
         gameObject.SetActive(false);
     }
 

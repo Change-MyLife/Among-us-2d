@@ -34,7 +34,7 @@ public class SpawnGameChar : MonoBehaviourPunCallbacks
         myPlayer = PhotonNetwork.Instantiate(this.PlayerPrefab.name, transform.position, Quaternion.identity);
 
         myPlayer.transform.localScale = index < 5 ? new Vector3(0.35f, 0.35f, 1f) : new Vector3(-0.35f, 0.35f, 1f);
-        myPlayer.GetComponent<PhotonView>().RPC("setColor", RpcTarget.AllBuffered, (EPlayerColor)Random.Range(0, 12));
+        //myPlayer.GetComponent<PhotonView>().RPC("setColor", RpcTarget.AllBuffered, (EPlayerColor)Random.Range(0, 12));
     }
 
     [ContextMenu("정보")]
