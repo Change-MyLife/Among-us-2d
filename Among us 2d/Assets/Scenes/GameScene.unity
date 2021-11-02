@@ -6641,7 +6641,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842848620}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0.97
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -8016,12 +8016,12 @@ GameObject:
   - component: {fileID: 1011486491}
   - component: {fileID: 1011486490}
   m_Layer: 0
-  m_Name: GameManger
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1011486490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8031,13 +8031,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1011486489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9129493bed10a4189a9afa1a14c635, type: 3}
+  m_Script: {fileID: 11500000, guid: cc4fc2ae4611f0042a15753410f5a582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 0}
-  spawnpoz: []
-  SpawnColor: 0
-  checkColor: 000000000000000000000000
+  imposters: 0
 --- !u!4 &1011486491
 Transform:
   m_ObjectHideFlags: 0
@@ -13872,7 +13869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695381543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 3.991, z: -10}
+  m_LocalPosition: {x: 1.682, y: 3.189, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

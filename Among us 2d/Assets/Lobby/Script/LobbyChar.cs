@@ -15,14 +15,19 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
 
     private SpriteRenderer spriteRender;
 
+    // 플레이어 색상
     public EPlayerColor playerColor;
 
     [SerializeField]
     private Text nicknameText;
+    // 플레이어 닉네임
     private string nickname;
+    // 플레이어 사이즈
+    private float playerSize = 0.5f;
 
     public void Start()
     {
+        // 씬 이동 후에도 캐릭터 보존
         DontDestroyOnLoad(this.gameObject);
 
         // 플레이어 색상 설정
@@ -52,27 +57,38 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
     }
 
     // 씬 이동 후 호출
-    private void OnLevelWasLoaded()
+    private void OnLevelWasLoaded(int level)
     {
-        isMoveable = true;
-        
-        if (photonView.IsMine)
+        // 게임 씬
+        if(level == 2)
         {
-            Destroy(transform.Find("Main Camera").gameObject);
-            Camera cam = Camera.main;
-            cam.transform.SetParent(transform);
-            cam.transform.localPosition = new Vector3(0f, 0f, -10f);
-            cam.orthographicSize = 2.5f;
+            // 플레이어 설정 초기화
+            isMoveable = true;
+            playerSize = 0.3f;
+            speed = 1.5f;
+
+            transform.localScale = new Vector3(playerSize, playerSize, 1f);
+
+            if (photonView.IsMine)
+            {
+                // 카메라를 삭제 후 메인카메라를 다시 설정한다.
+                Destroy(transform.Find("Main Camera").gameObject);
+                Camera cam = Camera.main;
+                cam.transform.SetParent(transform);
+                cam.transform.localPosition = new Vector3(0f, 0f, -10f);
+                cam.orthographicSize = 1.3f;
+            }
         }
     }
 
     private void OnDestroy()
     {
-        /*if (LobbyManger.Instance != null)
+        // LobbyManger RPC
+        if (LobbyManger.Instance != null)
         {
             LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
             LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
-        }*/
+        }
     }
 
     void Update()
@@ -89,8 +105,8 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
             if (Setting.controlType == EcontrolType.KeyboardMouse)
             {
                 Vector3 dir = Vector3.ClampMagnitude(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f), 1f);
-                if (dir.x < 0f) transform.localScale = new Vector3(-0.5f, 0.5f, 1f);
-                else if (dir.x > 0f) transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+                if (dir.x < 0f) transform.localScale = new Vector3(-playerSize, playerSize, 1f);
+                else if (dir.x > 0f) transform.localScale = new Vector3(playerSize, playerSize, 1f);
                 transform.position += dir * speed * Time.deltaTime;
                 isMove = dir.magnitude != 0f;
             }
@@ -99,8 +115,8 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
                 if (Input.GetMouseButton(0))
                 {
                     Vector3 dir = (Input.mousePosition - new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0f)).normalized;
-                    if (dir.x < 0f) transform.localScale = new Vector3(-0.5f, 0.5f, 1f);
-                    else if (dir.x > 0f) transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+                    if (dir.x < 0f) transform.localScale = new Vector3(-playerSize, playerSize, 1f);
+                    else if (dir.x > 0f) transform.localScale = new Vector3(playerSize, playerSize, 1f);
                     transform.position += dir * speed * Time.deltaTime;
                     isMove = dir.magnitude != 0f;
                 }
