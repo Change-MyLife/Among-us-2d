@@ -21,8 +21,11 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
     private Text nicknameText;
     private string nickname;
 
-    public virtual void Start()
+    public void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
+
+        // 플레이어 색상 설정
         spriteRender = GetComponent<SpriteRenderer>();
         spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
 
@@ -41,24 +44,35 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
         photonView.RPC("SetNickName", RpcTarget.AllBuffered);
 
         // LobbyManger RPC
-        LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
-        LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
-    }
-
-    [PunRPC]
-    public void SetNickName()
-    {
-        nickname = photonView.Owner.NickName;
-        nicknameText.text = nickname;
-    }
-
-    private void OnDestroy()
-    {
         if (LobbyManger.Instance != null)
         {
             LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
             LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
         }
+    }
+
+    // 씬 이동 후 호출
+    private void OnLevelWasLoaded()
+    {
+        isMoveable = true;
+        
+        if (photonView.IsMine)
+        {
+            Destroy(transform.Find("Main Camera").gameObject);
+            Camera cam = Camera.main;
+            cam.transform.SetParent(transform);
+            cam.transform.localPosition = new Vector3(0f, 0f, -10f);
+            cam.orthographicSize = 2.5f;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        /*if (LobbyManger.Instance != null)
+        {
+            LobbyManger.Instance.GetComponent<PhotonView>().RPC("UpdatePlayerCount", RpcTarget.All);
+            LobbyManger.Instance.GetComponent<PhotonView>().RPC("SetStartButton", RpcTarget.All);
+        }*/
     }
 
     void Update()
@@ -103,6 +117,13 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
         {
             nicknameText.transform.localScale = new Vector3(0.3f, 0.3f, 1f);
         }
+    }
+
+    [PunRPC]
+    public void SetNickName()
+    {
+        nickname = photonView.Owner.NickName;
+        nicknameText.text = nickname;
     }
 
     [PunRPC]

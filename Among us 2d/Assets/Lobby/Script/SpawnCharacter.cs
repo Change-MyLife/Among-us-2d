@@ -51,7 +51,6 @@ public class SpawnCharacter : MonoBehaviourPunCallbacks/*, IPunObservable*/
 
         myPlayer.transform.localScale = index < 5 ? new Vector3(0.5f, 0.5f, 1f) : new Vector3(-0.5f, 0.5f, 1f);
         myPlayer.GetComponent<PhotonView>().RPC("setColor", RpcTarget.AllBuffered, (EPlayerColor)Random.Range(0,12));
-
     }
 
     [ContextMenu("정보")]

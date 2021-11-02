@@ -223,7 +223,6 @@ GameObject:
   - component: {fileID: 4493825476056535041}
   - component: {fileID: 4493825476056535040}
   - component: {fileID: 4493825476056535043}
-  - component: {fileID: 3806669224206534386}
   - component: {fileID: 5402675971494213985}
   m_Layer: 8
   m_Name: Game Character
@@ -318,6 +317,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 4493825476056535041}
   - {fileID: 4493825476056535040}
+  - {fileID: 5402675971494213985}
   sceneViewId: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -377,21 +377,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3806669224206534386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4493825476056535046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 716e22535087175428578c71c6f848a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
-  playerColor: 0
-  nicknameText: {fileID: 2514339366094623123}
 --- !u!114 &5402675971494213985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,4 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27da16422d609c46bbf1cce02444475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playercolor: 0
+  speed: 1.5
+  playerColor: 0
+  nicknameText: {fileID: 2514339366094623123}
+  nickname: 
