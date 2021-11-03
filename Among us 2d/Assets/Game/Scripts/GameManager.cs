@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+
+        LoadingUI.instance.StartCoroutine("Loading");
     }
 
     [ContextMenu("정보")]

@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - GameManager
     - GameSettingUI
     - LaptopTrigger
+    - LoadingUI
     - LobbyChar
     - LobbyManger
     - LobbySettingUI
@@ -150,17 +151,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 15996}
+      Script: {instanceID: 14754}
     - Class: 114
-      Script: {instanceID: 16262}
+      Script: {instanceID: 15998}
     - Class: 114
-      Script: {instanceID: 16358}
+      Script: {instanceID: 16264}
     - Class: 114
-      Script: {instanceID: 16396}
+      Script: {instanceID: 16360}
     - Class: 114
-      Script: {instanceID: 16588}
+      Script: {instanceID: 16398}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 16420}
+    - Class: 114
+      Script: {instanceID: 16590}
+    - Class: 114
+      Script: {instanceID: 16692}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -178,8 +183,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
       Script: {instanceID: 0}
     Assets/Scenes/LobbyScene.unity:
     - Class: 1
@@ -245,13 +248,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14006}
     - Class: 114
-      Script: {instanceID: 16396}
+      Script: {instanceID: 16398}
     - Class: 114
-      Script: {instanceID: 16418}
+      Script: {instanceID: 16420}
     - Class: 114
-      Script: {instanceID: 16588}
+      Script: {instanceID: 16590}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 16692}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -396,57 +399,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14748}
     - Class: 114
-      Script: {instanceID: 14814}
+      Script: {instanceID: 14816}
     - Class: 114
-      Script: {instanceID: 14840}
+      Script: {instanceID: 14842}
     - Class: 114
-      Script: {instanceID: 15008}
+      Script: {instanceID: 15010}
     - Class: 114
-      Script: {instanceID: 15060}
+      Script: {instanceID: 15062}
     - Class: 114
-      Script: {instanceID: 15074}
+      Script: {instanceID: 15076}
     - Class: 114
-      Script: {instanceID: 15172}
+      Script: {instanceID: 15174}
     - Class: 114
-      Script: {instanceID: 15216}
+      Script: {instanceID: 15218}
     - Class: 114
-      Script: {instanceID: 15240}
+      Script: {instanceID: 15242}
     - Class: 114
-      Script: {instanceID: 15494}
+      Script: {instanceID: 15496}
     - Class: 114
-      Script: {instanceID: 15584}
+      Script: {instanceID: 15586}
     - Class: 114
-      Script: {instanceID: 15930}
+      Script: {instanceID: 15932}
     - Class: 114
-      Script: {instanceID: 16186}
+      Script: {instanceID: 16188}
     - Class: 114
-      Script: {instanceID: 16246}
+      Script: {instanceID: 16248}
     - Class: 114
-      Script: {instanceID: 16396}
+      Script: {instanceID: 16398}
     - Class: 114
-      Script: {instanceID: 16418}
+      Script: {instanceID: 16420}
     - Class: 114
-      Script: {instanceID: 16534}
+      Script: {instanceID: 16536}
     - Class: 114
-      Script: {instanceID: 16540}
+      Script: {instanceID: 16542}
     - Class: 114
-      Script: {instanceID: 16588}
+      Script: {instanceID: 16590}
     - Class: 114
-      Script: {instanceID: 16614}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 16636}
+      Script: {instanceID: 16638}
     - Class: 114
-      Script: {instanceID: 16646}
+      Script: {instanceID: 16648}
     - Class: 114
-      Script: {instanceID: 16682}
+      Script: {instanceID: 16684}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 16692}
     - Class: 114
-      Script: {instanceID: 16778}
+      Script: {instanceID: 16780}
     - Class: 114
-      Script: {instanceID: 16784}
+      Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 28288}
+      Script: {instanceID: 27076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1614,6 +1617,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: be847c2444cc0093c5f943b7318afe2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadingUI
   - hash:
       serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
