@@ -6,6 +6,12 @@ using UnityEngine.EventSystems;
 using Photon.Pun;
 using Photon.Realtime;
 
+public enum PlayerType
+{
+    Crew,
+    imposter
+}
+
 public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
 {
     private Animator animator;
@@ -24,6 +30,9 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
     private string nickname;
     // 플레이어 사이즈
     private float playerSize = 0.5f;
+
+    // 플레이어의 타입 (임포스터 or 크루원)
+    public PlayerType playerType = PlayerType.Crew;
 
     public void Start()
     {
@@ -78,6 +87,9 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
                 cam.transform.localPosition = new Vector3(0f, 0f, -10f);
                 cam.orthographicSize = 1.3f;
             }
+
+            // GameManager의 ChooseImposter()로 임포스터 선정
+            GameManager.Instance.ChooseImposters(this.gameObject);
         }
     }
 

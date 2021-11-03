@@ -22,7 +22,7 @@ public class GameSettingUI : MonoBehaviourPunCallbacks
     public override void OnEnable()
     {
         // 캐릭터 정지
-        GameChar.isMoveable = false;
+        LobbyChar.isMoveable = false;
 
         switch (Setting.controlType)
         {
@@ -57,7 +57,7 @@ public class GameSettingUI : MonoBehaviourPunCallbacks
     public void Close()
     {
         // 캐릭터 이동
-        GameChar.isMoveable = true;
+        LobbyChar.isMoveable = true;
 
         StartCoroutine(CloseAfterDelay());
     }
