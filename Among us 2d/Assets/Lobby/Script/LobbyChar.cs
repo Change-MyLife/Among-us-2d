@@ -27,7 +27,7 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField]
     private Text nicknameText;
     // 플레이어 닉네임
-    private string nickname;
+    public string nickname;
     // 플레이어 사이즈
     private float playerSize = 0.5f;
 
@@ -88,8 +88,8 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
                 cam.orthographicSize = 1.3f;
             }
 
-            // GameManager의 ChooseImposter()로 임포스터 선정
-            GameManager.Instance.ChooseImposters(this.gameObject);
+            // GameManager로 플레이어 추가
+            GameManager.m_instance.AddPlayers(this.gameObject);
         }
     }
 

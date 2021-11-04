@@ -7,22 +7,38 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 public class GameManager : MonoBehaviour
 {
     // 싱글톤
-    public static GameManager Instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if(m_instance == null)
+            {
+                m_instance = FindObjectOfType<GameManager>();
+            }
+
+            return m_instance;
+        }
+    }
+
+    public static GameManager m_instance;
 
     // 임포스터 수
-    [SerializeField]
-    private int imposters;
-    private int playerCount;    // 현재 플레이어 수
+    public int imposters;
+    public int playerCount;    // 현재 플레이어 수
 
     public List<GameObject> PlayerList = new List<GameObject>();
 
     private void Awake()
     {
+        // 싱글톤
+        if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        //instance = this;
+
         // 현재 room의 커스텀프로퍼티를 가져오기
         Hashtable CP = PhotonNetwork.CurrentRoom.CustomProperties;
-
-        // 싱글톤
-        Instance = this;
 
         // room에 저장되어 있는 임포스터 수
         imposters = (int)CP["imposter"];
@@ -32,26 +48,45 @@ public class GameManager : MonoBehaviour
         PhotonNetwork.AutomaticallySyncScene = true;
     }
 
-    public void ChooseImposters(GameObject crew)
+    private void Start()
+    {
+        StartCoroutine("GameReady");
+    }
+
+    public void AddPlayers(GameObject crew)
     {
         // 플레이어 추가
         PlayerList.Add(crew);
+    }
 
-        // 임포스터 정하기
-        if (PlayerList.Count == playerCount)
+    public IEnumerator GameReady()
+    {
+        // 플레이어 수가 같아질 때 까지 update 한다.
+        while (PlayerList.Count != playerCount)
         {
-            while (imposters > 0)
-            {
-                int ran = Random.Range(0, playerCount);
-                if(PlayerList[ran].GetComponent<LobbyChar>().playerType == PlayerType.Crew)
-                {
-                    PlayerList[ran].GetComponent<LobbyChar>().playerType = PlayerType.imposter;
-                    imposters--;
-                }
-            }
+            yield return null;
         }
 
-        LoadingUI.instance.StartCoroutine("Loading");
+        ChooseImposters();      // 임포스터 정하는 함수
+
+        yield return new WaitForSeconds(0.5f);
+
+        yield return StartCoroutine(LoadingUI.instance.Loading());      // 로딩 중
+    }
+
+    public void ChooseImposters()
+    {
+        // 임포스터 정하기
+        int imp = imposters;
+        while (imp > 0)
+        {
+            int ran = Random.Range(0, playerCount);
+            if (PlayerList[ran].GetComponent<LobbyChar>().playerType == PlayerType.Crew)
+            {
+                PlayerList[ran].GetComponent<LobbyChar>().playerType = PlayerType.imposter;
+                imp--;
+            }
+        }
     }
 
     [ContextMenu("정보")]

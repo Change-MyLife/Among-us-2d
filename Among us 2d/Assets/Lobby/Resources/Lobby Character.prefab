@@ -232,6 +232,7 @@ MonoBehaviour:
   speed: 2
   playerColor: 0
   nicknameText: {fileID: 4961345715202415515}
+  nickname: 
   playerType: 0
 --- !u!1 &2826809986491027238
 GameObject:

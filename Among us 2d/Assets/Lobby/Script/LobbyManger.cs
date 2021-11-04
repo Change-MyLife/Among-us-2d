@@ -83,8 +83,6 @@ public class LobbyManger : MonoBehaviourPunCallbacks
     public void OnClickStartButton()
     {
         Debug.Log("Game Start");
-        /*PhotonNetwork.IsMessageQueueRunning = false;
-        PhotonNetwork.LoadLevel(2);*/
         StartCoroutine(MoveToGameScene());
     }
 
