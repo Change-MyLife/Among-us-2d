@@ -68,7 +68,7 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
     // 씬 이동 후 호출
     private void OnLevelWasLoaded(int level)
     {
-        // 게임 씬
+        // 게임 씬 불러오고 호출
         if(level == 2)
         {
             // 플레이어 설정 초기화
@@ -165,15 +165,29 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
         spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
     }
 
+    [PunRPC]
+    public void setPoz(Vector3 poz)
+    {
+        transform.position = poz;
+    }
+
+    [PunRPC]
+    public void SetPlayerType(PlayerType type)
+    {
+        playerType = type;
+    }
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {
             stream.SendNext(playerColor);
+            stream.SendNext(playerType);
         }
         else
         {
             playerColor = (EPlayerColor)stream.ReceiveNext();
+            playerType = (PlayerType)stream.ReceiveNext();
         }
     }
 }

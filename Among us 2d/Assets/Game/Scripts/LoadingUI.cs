@@ -59,8 +59,6 @@ public class LoadingUI : MonoBehaviourPunCallbacks
         yield return new WaitForSeconds(2f);
         shhhhUI.SetActive(false);
 
-        //if (PhotonNetwork.LocalPlayer.IsLocal) { }
-
         SetLoadingUI();
         yield return new WaitForSeconds(1f);
         PlayerTypeLoadingUI();      // 각 플레이어의 타입에 따른 로딩UI
@@ -76,19 +74,21 @@ public class LoadingUI : MonoBehaviourPunCallbacks
     public void SetLoadingUI()
     {
         int CountImp = GameManager.Instance.imposters;       // 임포스터 수
-        int Countcrew = GameManager.Instance.playerCount - CountImp;
+        int Countcrew = GameManager.Instance.playerCount;
 
         int i = 0;
         while (CountImp > 0)
         {
-            imposters[i++].SetActive(true);
+            imposters[i].SetActive(true);
+            i++;
             CountImp--;
         }
 
         i = 0;
         while (Countcrew > 0)
         {
-            crews[i++].SetActive(true);
+            crews[i].SetActive(true);
+            i++;
             Countcrew--;
         }
     }
