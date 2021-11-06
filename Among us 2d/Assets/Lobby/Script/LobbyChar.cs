@@ -177,6 +177,14 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
         playerType = type;
     }
 
+    public void SetNickNameColor(PlayerType type)
+    {
+        if(playerType == PlayerType.imposter && type == PlayerType.imposter)
+        {
+            nicknameText.color = Color.red;
+        }
+    }
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)

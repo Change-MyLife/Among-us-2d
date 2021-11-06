@@ -106,6 +106,10 @@ public class LoadingUI : MonoBehaviourPunCallbacks
                 }
                 else
                 {
+                    foreach(var player in GameManager.Instance.PlayerList)
+                    {
+                        player.GetComponent<LobbyChar>().SetNickNameColor(player.GetComponent<LobbyChar>().playerType);
+                    }
                     imposterUiText.text = v.GetComponent<LobbyChar>().nickname + "님은 임포스터 입니다.";
                     impostersUI.SetActive(true);
                 }
