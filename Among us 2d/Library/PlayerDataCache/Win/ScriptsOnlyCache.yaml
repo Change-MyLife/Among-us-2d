@@ -70,10 +70,12 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.UI.DebugUIHandlerVector4
     - UnityEngine.Rendering.UI.UIFoldout
     Unity.RenderPipelines.Universal.Editor.dll:
+    - UnityEditor.Experimental.Rendering.Universal.Path2D.ScriptablePathInspector
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
     - UnityEngine.Experimental.Rendering.Universal.Light2D
     - UnityEngine.Experimental.Rendering.Universal.Renderer2DData
+    - UnityEngine.Experimental.Rendering.Universal.ShadowCaster2D
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
@@ -124,6 +126,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 60
@@ -156,6 +160,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14754}
     - Class: 114
       Script: {instanceID: 15998}
+    - Class: 114
+      Script: {instanceID: 16154}
     - Class: 114
       Script: {instanceID: 16264}
     - Class: 114
@@ -449,7 +455,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 20712}
+      Script: {instanceID: 28880}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
