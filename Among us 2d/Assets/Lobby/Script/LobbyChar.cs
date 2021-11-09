@@ -34,6 +34,8 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
     // 플레이어의 타입 (임포스터 or 크루원)
     public PlayerType playerType = PlayerType.Crew;
 
+    [SerializeField] private Button KillButton;
+
     public void Start()
     {
         // 씬 이동 후에도 캐릭터 보존
@@ -182,6 +184,16 @@ public class LobbyChar : MonoBehaviourPunCallbacks, IPunObservable
         if(playerType == PlayerType.imposter && type == PlayerType.imposter)
         {
             nicknameText.color = Color.red;
+        }
+    }
+
+    [PunRPC]
+    public void Death()
+    {
+        animator.SetTrigger("Death");
+        if (photonView.IsMine)
+        {
+            isMoveable = false;
         }
     }
 

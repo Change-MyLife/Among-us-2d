@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - LobbySettingUI
     - MainMenuUI
     - OnlineUI
+    - PlayerKill
     - SettingUI
     - SpawnCharacter
     PhotonUnityNetworking.Demos.dll:
@@ -70,9 +71,9 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.UI.DebugUIHandlerVector4
     - UnityEngine.Rendering.UI.UIFoldout
     Unity.RenderPipelines.Universal.Editor.dll:
-    - UnityEditor.Experimental.Rendering.Universal.Path2D.ScriptablePathInspector
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
+    - UnityEngine.Experimental.Rendering.Universal.CompositeShadowCaster2D
     - UnityEngine.Experimental.Rendering.Universal.Light2D
     - UnityEngine.Experimental.Rendering.Universal.Renderer2DData
     - UnityEngine.Experimental.Rendering.Universal.ShadowCaster2D
@@ -86,8 +87,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -158,6 +161,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13114}
     - Class: 114
       Script: {instanceID: 14754}
+    - Class: 114
+      Script: {instanceID: 15924}
     - Class: 114
       Script: {instanceID: 15998}
     - Class: 114
@@ -261,6 +266,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16590}
     - Class: 114
       Script: {instanceID: 16692}
+    - Class: 114
+      Script: {instanceID: 148670}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -455,7 +462,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 28880}
+      Script: {instanceID: 33930}
+    - Class: 114
+      Script: {instanceID: 148670}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -575,7 +584,7 @@ ScriptsOnlyBuild:
     className: SmoothSyncMovement
   - hash:
       serializedVersion: 2
-      Hash: 62e4188ee19203c03d984f63a4973bb3
+      Hash: 2579c0724b2fff450411538e0d967cd2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LobbyChar
@@ -1553,12 +1562,6 @@ ScriptsOnlyBuild:
     className: ToggleExpand
   - hash:
       serializedVersion: 2
-      Hash: b0461cb1a3871955d2011dc1e2b91a8f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpawnGameChar
-  - hash:
-      serializedVersion: 2
       Hash: f050e4ebd311386367bb1906f9218b01
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1625,7 +1628,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 79fd44f78765cf0cc692eb005c666fc9
+      Hash: 97047445f968f58863f347a5a52417fb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LoadingUI
@@ -2123,7 +2126,7 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: 84f851467cecfdb459986e1e97351d40
+      Hash: 0579c4dc2410200c1d729bdf60fe5bf1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -2367,6 +2370,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 83dd5bf090fe665da1eb278255f242eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerKill
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity

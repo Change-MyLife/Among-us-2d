@@ -22,27 +22,29 @@ public class LoadingUI : MonoBehaviourPunCallbacks
 
     public static LoadingUI m_instance;
 
+    [Header("Crews and Imposters Sprites")]
+    [SerializeField]
+    private GameObject[] crews;
+    [SerializeField]
+    private GameObject[] imposters;
+
+    [Header("Loading UI")]
     [SerializeField]
     private GameObject shhhhUI;
-
     [SerializeField]
     private GameObject crewUI;
-
     [SerializeField]
     private GameObject impostersUI;
-
-    [SerializeField]
-    private GameObject playerUI;
-
     [SerializeField]
     private Text crewUiText;
     [SerializeField]
     private Text imposterUiText;
 
-    [SerializeField]
-    private GameObject[] crews;
-    [SerializeField]
-    private GameObject[] imposters;
+    [Header("Player UI")]
+    [SerializeField] private GameObject playerUI;
+    [SerializeField] private GameObject killButton;
+
+    private GameObject myChar;      // 자신의 캐릭터 photonview.ismine
 
     void Awake()
     {
@@ -68,7 +70,7 @@ public class LoadingUI : MonoBehaviourPunCallbacks
         gameObject.SetActive(false);
 
         // 플레이어 타입에 따라 UI를 다르게 한다
-        playerUI.SetActive(true);
+        SetPlayerUI(myChar.GetComponent<LobbyChar>().playerType);
     }
 
     public void SetLoadingUI()
@@ -99,6 +101,8 @@ public class LoadingUI : MonoBehaviourPunCallbacks
         {
             if (v.GetComponent<PhotonView>().IsMine)
             {
+                myChar = v;     // 자신의 캐릭터
+
                 if (v.transform.GetComponent<LobbyChar>().playerType == PlayerType.Crew)
                 {
                     crewUiText.text = "임포스터가 " + GameManager.Instance.imposters + "명 남았습니다.";
@@ -115,5 +119,15 @@ public class LoadingUI : MonoBehaviourPunCallbacks
                 }
             }
         }
+    }
+
+    public void SetPlayerUI(PlayerType type)
+    {
+        if(type == PlayerType.imposter)
+        {
+            killButton.SetActive(true);
+        }
+
+        playerUI.SetActive(true);
     }
 }

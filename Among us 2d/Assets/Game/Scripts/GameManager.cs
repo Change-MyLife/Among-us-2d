@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
@@ -31,6 +32,14 @@ public class GameManager : MonoBehaviourPunCallbacks
     [SerializeField]
     private Transform GameCharSpawnPoz;
 
+    [SerializeField] private Text killCoolText;
+    public GameObject killButton;
+    public float killCoolTime;  // 사용자 지정 킬 쿨타임
+    public float killCool;      // 킬 쿨타임
+    bool killable = false;      // 킬 가능여부
+
+    public LobbyChar myChar;
+
     private void Awake()
     {
         // 싱글톤
@@ -53,6 +62,37 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             StartCoroutine("GameReady");        // GameReady 코루틴 시작
         }
+
+        killCool = killCoolTime;
+        killCoolText.text = killCoolTime + "";
+    }
+
+    private void Update()
+    {
+        // 임포스터 킬 쿨타임
+        if (myChar && myChar.GetComponent<LobbyChar>().playerType == PlayerType.imposter)
+        {
+            if (killCool < 0)
+            {
+                killable = true;
+            }
+            else
+            {
+                killable = false;
+                killCool -= Time.deltaTime;
+            }
+
+            if (killable)
+            {
+                //killButton.GetComponent<Button>().interactable = true;
+                killCoolText.text = "";
+            }
+            else
+            {
+                killButton.GetComponent<Button>().interactable = false;
+                killCoolText.text = (int)killCool + "";
+            }
+        }
     }
 
     // 플레이어들 리스트 추가
@@ -72,6 +112,8 @@ public class GameManager : MonoBehaviourPunCallbacks
             yield return null;
         }
 
+        photonView.RPC("FindMyChar", RpcTarget.All);
+
         ChooseImposters();      // 임포스터 정하는 함수
         SpawnGameChar();        // 플레이어들의 스폰 위치
 
@@ -84,6 +126,18 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void RpcLoading()
     {
         StartCoroutine(LoadingUI.instance.Loading());       // LoadingUI 코루틴 시작
+    }
+
+    [PunRPC]
+    private void FindMyChar()
+    {
+        foreach (var player in GameManager.Instance.PlayerList)
+        {
+            if (player.GetComponent<PhotonView>().IsMine)
+            {
+                myChar = player.GetComponent<LobbyChar>();
+            }
+        }
     }
 
     // 임포스터 선택 기능
@@ -114,25 +168,6 @@ public class GameManager : MonoBehaviourPunCallbacks
             angle *= i;
             spawnPos = GameCharSpawnPoz.position + (new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * distance);
             PlayerList[i].GetComponent<PhotonView>().RPC("setPoz", RpcTarget.All, spawnPos);
-        }
-    }
-
-    [ContextMenu("정보")]
-    void Info()
-    {
-        if (PhotonNetwork.InRoom)
-        {
-            Debug.Log("==============방 정보==============");
-            Debug.Log("임포스터 수는 : " + imposters);
-            print("현재 방 인원수 : " + PhotonNetwork.CurrentRoom.PlayerCount);
-            print("현재 방 최대인원수 : " + PhotonNetwork.CurrentRoom.MaxPlayers);
-
-            string playerStr = "방에 있는 플레이어 목록 : ";
-            for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
-            {
-                playerStr += PhotonNetwork.PlayerList[i].NickName + ", ";
-            }
-            print(playerStr);
         }
     }
 }

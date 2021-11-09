@@ -18,7 +18,9 @@ public class LaptopTrigger : MonoBehaviourPunCallbacks
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<PhotonView>().IsMine)
+        var player = collision.GetComponent<LobbyChar>();
+
+        if (player && player.GetComponent<PhotonView>().IsMine)
         {
             UseButton.image.overrideSprite = sprites[1];
             // 커스텀 마이즈 버튼의 활성화
@@ -32,7 +34,9 @@ public class LaptopTrigger : MonoBehaviourPunCallbacks
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<PhotonView>().IsMine)
+        var player = collision.GetComponent<LobbyChar>();
+
+        if (player && player.GetComponent<PhotonView>().IsMine)
         {
             UseButton.image.overrideSprite = sprites[0];
             // 커스텀 마이즈 버튼의 비활성화
