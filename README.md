@@ -3,6 +3,7 @@
 // 스프라이트 소스들은 하단의 링크를 참조해주세요.  
 # 코드 미리보기
 ```
+MonoBehaviourPunCallbacks CallBacks
     public void Connect()
     {
         if (PhotonNetwork.IsConnected)
