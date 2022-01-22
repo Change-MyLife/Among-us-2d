@@ -14,7 +14,7 @@
             ...
     }
 ```
-PunRPC를 이용한 동기화 방법
+PunRPC를 이용한 동기화
 ```
 [PunRPC]
     public void setColor(EPlayerColor color)
@@ -27,6 +27,17 @@ PunRPC를 이용한 동기화 방법
         spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
     }
     ...
+```
+OnPhotonSerializeView를 이용한 동기화
+```
+public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(playerColor);
+            stream.SendNext(playerType);
+            ...
+    }
 ```
 # 스크린샷
 __메인화면__  
