@@ -23,8 +23,7 @@ PunRPC를 이용한 동기화
         if (spriteRender == null)
         {
             spriteRender = GetComponent<SpriteRenderer>();
-        }
-        spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
+        ...
     }
     ...
 ```
