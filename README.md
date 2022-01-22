@@ -3,69 +3,38 @@
 // 스프라이트 소스들은 하단의 링크를 참조해주세요.  
 # 코드 미리보기
 ```
-public class OnlineUI : MonoBehaviourPunCallbacks
-{
-    [SerializeField]
-    private InputField nicknameinputField;
-    [SerializeField]
-    private GameObject createRoomUI;
-
-    public void onClickCreateRoomButton()
+public override void OnConnectedToMaster()
     {
-        if(nicknameinputField.text != "")
-        {
-            Setting.nickname = nicknameinputField.text;
+        // 방 옵션
+        RoomOptions roomOption = new RoomOptions();
+        roomOption.MaxPlayers = (byte)roomdata.playerCount;
+        roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
 
-            createRoomUI.SetActive(true);
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            nicknameinputField.GetComponent<Animator>().SetTrigger("on");
-        }
-    }
-
-    public override void OnConnectedToMaster()
-    {
         Debug.Log("Connected.");
+        Debug.Log("roomMaxPlayers" + (byte)roomdata.playerCount);
         PhotonNetwork.LocalPlayer.NickName = Setting.nickname;
-        PhotonNetwork.JoinRandomRoom();
+      
+        PhotonNetwork.CreateRoom("Room", roomOption);
     }
 
-    public override void OnJoinedRoom()
+    public void Connect()
     {
-        Debug.Log("Now this client is in a room");
-        PhotonNetwork.LoadLevel("LobbyScene");
-    }
-
-    public override void OnJoinRandomFailed(short returnCode, string message)
-    {
-        Debug.Log("Failed JoinRandom Room is nothing");
-    }
-
-    public void FindGameButton()
-    {
-        if (nicknameinputField.text != "")
+        if (PhotonNetwork.IsConnected)
         {
-            Setting.nickname = nicknameinputField.text;
+            // 방 옵션
+            RoomOptions roomOption = new RoomOptions();
+            roomOption.MaxPlayers = (byte)roomdata.playerCount;
+            roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
 
-            if (PhotonNetwork.IsConnected)
-            {
-                PhotonNetwork.LocalPlayer.NickName = Setting.nickname;
-                PhotonNetwork.JoinRandomRoom();
-            }
-            else
-            {
-                Debug.Log("Connecting to server");
-                PhotonNetwork.ConnectUsingSettings();
-            }
+            Debug.Log("Connected.");
+            PhotonNetwork.CreateRoom(null, roomOption);
         }
         else
         {
-            nicknameinputField.GetComponent<Animator>().SetTrigger("on");
+            Debug.Log("Connecting to server");
+            PhotonNetwork.ConnectUsingSettings();
         }
     }
-}
 ```
 # 스크린샷
 __메인화면__  
