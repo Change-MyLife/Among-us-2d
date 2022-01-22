@@ -3,8 +3,6 @@
 // 스프라이트 소스들은 하단의 링크를 참조해주세요.  
 # 코드 미리보기
 ![image](https://user-images.githubusercontent.com/65800890/150623537-c37c0ac4-14d2-4999-b6e5-f7d3cd6f9983.png)  
-![image](https://user-images.githubusercontent.com/65800890/150623543-93f52803-db31-4371-a7a2-1afd23a21006.png)  
-![image](https://user-images.githubusercontent.com/65800890/150623545-b7fc65f9-4316-46c5-87b7-11f36fd9fa32.png)  
 # 스크린샷
 __메인화면__  
 ![image](https://user-images.githubusercontent.com/65800890/150623548-4ce90283-9f42-48ac-95c6-4e9513ddb2d4.png)  
