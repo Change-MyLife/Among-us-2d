@@ -2,8 +2,8 @@
 포톤 네트워크를 사용하여 멀티플레이 기능을 구현한 어몽어스 게임의 모작입니다.  
 // 스프라이트 소스들은 하단의 링크를 참조해주세요.  
 # 코드 미리보기
+포톤 콜백 함수들 사용방법  
 ```
-MonoBehaviourPunCallbacks CallBacks
     public void Connect()
     {
         if (PhotonNetwork.IsConnected)
