@@ -26,6 +26,7 @@ PunRPC를 이용한 동기화 방법
         }
         spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
     }
+    ...
 ```
 # 스크린샷
 __메인화면__  
