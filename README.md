@@ -5,35 +5,20 @@
 ```
 public override void OnConnectedToMaster()
     {
-        // 방 옵션
         RoomOptions roomOption = new RoomOptions();
         roomOption.MaxPlayers = (byte)roomdata.playerCount;
         roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
-
-        Debug.Log("Connected.");
-        Debug.Log("roomMaxPlayers" + (byte)roomdata.playerCount);
-        PhotonNetwork.LocalPlayer.NickName = Setting.nickname;
-      
-        PhotonNetwork.CreateRoom("Room", roomOption);
+        ...
     }
 
     public void Connect()
     {
         if (PhotonNetwork.IsConnected)
         {
-            // 방 옵션
             RoomOptions roomOption = new RoomOptions();
             roomOption.MaxPlayers = (byte)roomdata.playerCount;
             roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
-
-            Debug.Log("Connected.");
-            PhotonNetwork.CreateRoom(null, roomOption);
-        }
-        else
-        {
-            Debug.Log("Connecting to server");
-            PhotonNetwork.ConnectUsingSettings();
-        }
+            ...
     }
 ```
 # 스크린샷
