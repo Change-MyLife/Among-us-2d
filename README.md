@@ -3,14 +3,6 @@
 // 스프라이트 소스들은 하단의 링크를 참조해주세요.  
 # 코드 미리보기
 ```
-public override void OnConnectedToMaster()
-    {
-        RoomOptions roomOption = new RoomOptions();
-        roomOption.MaxPlayers = (byte)roomdata.playerCount;
-        roomOption.CustomRoomProperties = new Hashtable() { { "imposter", roomdata.imposterCount } };
-        ...
-    }
-
     public void Connect()
     {
         if (PhotonNetwork.IsConnected)
