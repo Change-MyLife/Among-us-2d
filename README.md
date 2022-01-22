@@ -3,9 +3,69 @@
 // 스프라이트 소스들은 하단의 링크를 참조해주세요.  
 # 코드 미리보기
 ```
-코드
-코드
-코드
+public class OnlineUI : MonoBehaviourPunCallbacks
+{
+    [SerializeField]
+    private InputField nicknameinputField;
+    [SerializeField]
+    private GameObject createRoomUI;
+
+    public void onClickCreateRoomButton()
+    {
+        if(nicknameinputField.text != "")
+        {
+            Setting.nickname = nicknameinputField.text;
+
+            createRoomUI.SetActive(true);
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            nicknameinputField.GetComponent<Animator>().SetTrigger("on");
+        }
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("Connected.");
+        PhotonNetwork.LocalPlayer.NickName = Setting.nickname;
+        PhotonNetwork.JoinRandomRoom();
+    }
+
+    public override void OnJoinedRoom()
+    {
+        Debug.Log("Now this client is in a room");
+        PhotonNetwork.LoadLevel("LobbyScene");
+    }
+
+    public override void OnJoinRandomFailed(short returnCode, string message)
+    {
+        Debug.Log("Failed JoinRandom Room is nothing");
+    }
+
+    public void FindGameButton()
+    {
+        if (nicknameinputField.text != "")
+        {
+            Setting.nickname = nicknameinputField.text;
+
+            if (PhotonNetwork.IsConnected)
+            {
+                PhotonNetwork.LocalPlayer.NickName = Setting.nickname;
+                PhotonNetwork.JoinRandomRoom();
+            }
+            else
+            {
+                Debug.Log("Connecting to server");
+                PhotonNetwork.ConnectUsingSettings();
+            }
+        }
+        else
+        {
+            nicknameinputField.GetComponent<Animator>().SetTrigger("on");
+        }
+    }
+}
 ```
 # 스크린샷
 __메인화면__  
