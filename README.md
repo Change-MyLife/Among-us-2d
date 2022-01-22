@@ -14,6 +14,19 @@
             ...
     }
 ```
+PunRPC를 이용한 동기화 방법
+```
+[PunRPC]
+    public void setColor(EPlayerColor color)
+    {
+        playerColor = color;
+        if (spriteRender == null)
+        {
+            spriteRender = GetComponent<SpriteRenderer>();
+        }
+        spriteRender.material.SetColor("_PlayerColor", PlayerColor.GetColor(playerColor));
+    }
+```
 # 스크린샷
 __메인화면__  
 ![image](https://user-images.githubusercontent.com/65800890/150623548-4ce90283-9f42-48ac-95c6-4e9513ddb2d4.png)  
